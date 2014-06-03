@@ -1,4 +1,4 @@
-My custom responsive framework 
-====================
+aileen-and-manik
+================
 
-Built off of 1140gs, animate.css, bootstrap and many other open source frameworks
+Our Wedding Site
