@@ -11,7 +11,7 @@ module.exports = function(grunt) {
       },
     },
     watch: {
-      files: ['_prebuild/**'],
+      files: ['/*'],
       tasks: ['sass','concat'],
     },
     concat: {
@@ -46,7 +46,6 @@ module.exports = function(grunt) {
     }
   });
 
-  grunt.loadNpmTasks('grunt-jekyll');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
