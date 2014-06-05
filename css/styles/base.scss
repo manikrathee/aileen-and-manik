@@ -60,7 +60,7 @@ html, :root {
     font-feature-settings: 'liga' 1, 'onum' 1, 'dlig' 1;
 }
 body {
-  background: $off-white;
+  background: darken($off-white,5%);
   -webkit-backface-visibility: hidden;
   text-rendering: optimizelegibility;
   font-family: $calendas;
@@ -79,7 +79,27 @@ a {
 
 .container {
   background: $white;
+  padding: 0;
   border-left: 1px solid #e2e2e2;
   border-right: 1px solid #e2e2e2;
-
+}
+header {
+  position: relative;
+  overflow: hidden;
+  height: 500px;
+  iframe {
+    width: 140%;
+    height: 710px;
+    position: relative;
+    top: -200px;
+    left: -15%;
+  }
+  span {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.65);
+  }
 }
