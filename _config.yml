@@ -5,8 +5,7 @@ url: http://blog.manikrathee.com
 #gems:        []
 #timezone:    nil
 #encoding:    nil
-source: /
-destination: /
+
 permalink: /posts/:year/:month/:day/:title.html
 
 safe: false
