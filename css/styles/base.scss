@@ -1,54 +1,42 @@
 /* Base Styles */
-
 @font-face {
   font-family: 'calendas';
   src: url("/fonts/calendas_plus.otf") format("opentype");
 }
 
 
-// @font-face {
-//     font-family: 'calendas-plusregular';
-//     src: url('/fonts/calendas_plus-webfont.eot');
-//     src: url('/fonts/calendas_plus-webfont.eot?#iefix') format('embedded-opentype'),
-//          url('/fonts/calendas_plus-webfont.woff') format('woff'),
-//          url('/fonts/calendas_plus-webfont.ttf') format('truetype');
-//     // font-weight: normal;
-//     // font-style: normal;
-// }
-
-
 /* Variables */
-  // Color
-  $white: rgba(255,255,255,1); /* #ffffff */
-  $off-white: rgba(248,247,247,1); // #f8f7f7
-  $black: rgba(21,19,20,1); /* #151314 */
-  $grey: rgba(110,110,110,1); // #6e6e6e
-  $pink: rgba(253,143,215,1); // #fd8fd7
+// Color
+$white: rgba(255,255,255,1); /* #ffffff */
+$off-white: rgba(248,247,247,1); // #f8f7f7
+$black: rgba(21,19,20,1); /* #151314 */
+$grey: rgba(110,110,110,1); // #6e6e6e
+$pink: rgba(253,143,215,1); // #fd8fd7
 
 
-  // Base Type
-  $georgia: Georgia, Cambria, "Times New Roman", Times, serif;
-  $helvetica: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  $lucida-grande: "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;
-  $monospace: "Bitstream Vera Sans Mono", Consolas, Courier, monospace;
-  // TypeKit
-  $proxima:  "proxima-nova", helvetica, tahoma, verdana, sans-serif;
-  $calendas: 'calendas', Georgia, Cambria, "Times New Roman", Times, serif;
+// Base Type
+$georgia: Georgia, Cambria, "Times New Roman", Times, serif;
+$helvetica: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$lucida-grande: "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;
+$monospace: "Bitstream Vera Sans Mono", Consolas, Courier, monospace;
+// TypeKit
+$proxima:  "proxima-nova", helvetica, tahoma, verdana, sans-serif;
+$calendas: 'calendas', Georgia, Cambria, "Times New Roman", Times, serif;
 
-  // Elements
-  $divider: 1px solid rgba(229,229,229,1); /* #E5E5E5 */
+// Elements
+$divider: 1px solid rgba(229,229,229,1); /* #E5E5E5 */
 
 
-  // Symbolset
-  .ss-icon {
-    font-style: normal;
-    font-weight: normal;
-    text-decoration: none;
-    text-rendering: optimizeLegibility;
-    white-space: nowrap;
-    -webkit-font-smoothing: antialiased;
-    vertical-align: middle;
-  }
+// Symbolset
+.ss-icon {
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-rendering: optimizeLegibility;
+  white-space: nowrap;
+  -webkit-font-smoothing: antialiased;
+  vertical-align: middle;
+}
 
 // Highlights
 ::-moz-selection{ background: #333; color:#fff; text-shadow: none; }
@@ -58,19 +46,19 @@ a:link { -webkit-tap-highlight-color: none; }
 
 // Global Elements
 html, :root {
-    -webkit-text-size-adjust: none;
-    -moz-text-size-adjust: none;
-    -ms-text-size-adjust: none;
-    text-size-adjust: none;
-    -moz-font-feature-settings:"liga=1, dlig=1";
-    -moz-font-feature-settings:"liga", "dlig";
-    -ms-font-feature-settings:"liga", "dlig";
-    -o-font-feature-settings:"liga", "dlig";
-    -webkit-font-feature-settings:"liga", "dlig";
-    font-feature-settings:"liga", "dlig";
-    font-variant-ligatures:common-ligatures discretionary-ligatures;
-    text-rendering: optimizeLegibility;
-    // font-feature-settings: 'liga' 1, 'onum' 1, 'dlig' 1;
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+  text-size-adjust: none;
+  -moz-font-feature-settings:"liga=1, dlig=1";
+  -moz-font-feature-settings:"liga", "dlig";
+  -ms-font-feature-settings:"liga", "dlig";
+  -o-font-feature-settings:"liga", "dlig";
+  -webkit-font-feature-settings:"liga", "dlig";
+  font-feature-settings:"liga", "dlig";
+  font-variant-ligatures:common-ligatures discretionary-ligatures;
+  text-rendering: optimizeLegibility;
+  // font-feature-settings: 'liga' 1, 'onum' 1, 'dlig' 1;
 }
 body {
   background: darken($off-white,5%);
@@ -128,29 +116,34 @@ header {
     width: 100%;
     background: rgba(0,0,0,0.45);
   }
-  h1, nav {
+  nav {
     position: absolute;
     left: 0;
     z-index: 20;
   }
   h1 {
-    top: 0;
-    width: 100%;
-    background: blue;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    z-index: 20;
+    background: transparent url('../img/mark.png') no-repeat 50% 50%;
+    background-size: 100%;
     text-align: center;
+    margin-left: -82px;
     @include ir;
+    @include size(170px,82px);
   }
   nav {
     bottom: 0;
     width: 100%;
     ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
         width: 90%;
         max-width: 600px;
         margin: 0 auto;
         padding: 0;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
         list-style: none;
       }
       a {
@@ -158,5 +151,34 @@ header {
         align-items: flex-start;
         padding: 15px 20px;
       }
+  }
+}
+
+section {
+  padding: 20px;
+  h2 {
+    font-size: 3rem;
+    font-weight: 100;
+  }
+}
+section[id="vineyard"] {
+  text-align: center;
+  h2 {
+
+  }
+  a {
+    display: block;
+    float: right;
+    margin-top: 10px;
+  }
+}
+
+
+footer {
+  p {
+    display: block;
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
   }
 }
