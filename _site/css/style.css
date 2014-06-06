@@ -6540,6 +6540,14 @@ body {
   -o-animation-name: fadeIn;
   animation-name: fadeIn;
 }
+@media (min-width: 768px) {
+  body {
+    background-image: url("../img/footer-bg.png");
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    background-size: 100%;
+  }
+}
 
 a {
   color: #fd8fd7;
@@ -6567,17 +6575,55 @@ header {
   height: 500px;
 }
 header iframe {
+  position: relative;
+  top: -150px;
+  left: -15%;
+  z-index: 1;
   width: 140%;
   height: 710px;
-  position: relative;
-  top: -200px;
-  left: -15%;
 }
 header span {
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
+  z-index: 10;
   width: 100%;
-  background: rgba(0, 0, 0, 0.65);
+  background: rgba(0, 0, 0, 0.45);
+}
+header h1, header nav {
+  position: absolute;
+  left: 0;
+  z-index: 20;
+}
+header h1 {
+  top: 0;
+  width: 100%;
+  background: blue;
+  text-align: center;
+  display: block;
+  text-indent: -999em;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  text-align: left;
+  direction: ltr;
+}
+header nav {
+  bottom: 0;
+  width: 100%;
+}
+header nav ul {
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
+}
+header nav a {
+  display: flex;
+  align-items: flex-start;
+  padding: 15px 20px;
 }
