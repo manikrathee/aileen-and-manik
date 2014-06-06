@@ -477,7 +477,7 @@ table {
 
 .row {
   width: 100%;
-  max-width: 1140px;
+  max-width: 960px;
   min-width: 755px;
   margin: 0 auto;
   overflow: hidden;
@@ -6476,9 +6476,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 /* Base Styles */
 @font-face {
-  font-family: 'calendas-plusregular';
-  src: url("/fonts/calendas_plus-webfont.eot");
-  src: url("/fonts/calendas_plus-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/calendas_plus-webfont.woff") format("woff"), url("/fonts/calendas_plus-webfont.ttf") format("truetype");
+  font-family: 'calendas';
+  src: url("/fonts/calendas_plus.otf") format("opentype");
 }
 /* Variables */
 /* #ffffff */
@@ -6515,15 +6514,21 @@ html, :root {
   -moz-text-size-adjust: none;
   -ms-text-size-adjust: none;
   text-size-adjust: none;
+  -moz-font-feature-settings: "liga=1, dlig=1";
+  -moz-font-feature-settings: "liga", "dlig";
+  -ms-font-feature-settings: "liga", "dlig";
+  -o-font-feature-settings: "liga", "dlig";
+  -webkit-font-feature-settings: "liga", "dlig";
+  font-feature-settings: "liga", "dlig";
+  font-variant-ligatures: common-ligatures discretionary-ligatures;
   text-rendering: optimizeLegibility;
-  font-feature-settings: 'liga' 1, 'onum' 1, 'dlig' 1;
 }
 
 body {
   background: #ece9e9;
   -webkit-backface-visibility: hidden;
   text-rendering: optimizelegibility;
-  font-family: "calendas-plusregular", Georgia, Cambria, "Times New Roman", Times, serif;
+  font-family: "calendas", Georgia, Cambria, "Times New Roman", Times, serif;
   color: #6e6e6e;
   -webkit-animation: 1s ease;
   -moz-animation: 1s ease;
@@ -6540,13 +6545,19 @@ body {
   -o-animation-name: fadeIn;
   animation-name: fadeIn;
 }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   body {
     background-image: url("../img/footer-bg.png");
     background-repeat: no-repeat;
-    background-position: 50% 100%;
-    background-size: 100%;
+    background-position: 46% 100%;
+    background-size: 155%;
   }
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+  font-weight: normal;
+  margin: 0;
+  line-height: 1;
 }
 
 a {
