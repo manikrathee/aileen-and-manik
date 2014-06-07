@@ -61,7 +61,7 @@ html, :root {
   // font-feature-settings: 'liga' 1, 'onum' 1, 'dlig' 1;
 }
 body {
-  background: darken($off-white,5%);
+  background: $off-white;
   -webkit-backface-visibility: hidden;
   text-rendering: optimizelegibility;
   font-family: $calendas;
@@ -77,9 +77,15 @@ body {
   }
 }
 h1,h2,h3,h4,h5,h6,p,a {
-  font-weight: normal;
   margin: 0;
+  font-weight: normal;
   line-height: 1;
+}
+p, a {
+  font-size: 1rem;
+}
+p {
+  line-height: 1.6;
 }
 a {
   color: $pink;
@@ -176,8 +182,8 @@ section {
   }
   h2 {
     display: block;
-    padding: 0 0 20px 0;
-    font-size: 2rem;
+    padding: 0 0 40px 0;
+    font-size: 3.5rem;
     font-weight: 100;
     text-align: center;
   }
@@ -186,7 +192,7 @@ section {
 section[id="vineyard"] {
   text-align: center;
   h2 {
-    font-size: 3.5rem;
+    font-size: 4rem;
   }
   date {
     font-family: $proxima;
@@ -238,9 +244,14 @@ footer {
     display: block;
     font-size: 1.2rem;
     text-align: center;
+    .ss-icon {
+      font-size: 0.8rem;
+    }
     & + p {
+      display: block;
+      margin-top: 5px;
       text-transform: uppercase;
-      font-size: 1rem;
+      font-size: 0.8rem;
       font-family: $proxima;
       font-weight: 700;
     }
