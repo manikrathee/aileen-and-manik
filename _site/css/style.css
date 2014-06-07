@@ -6529,7 +6529,8 @@ body {
   -webkit-backface-visibility: hidden;
   text-rendering: optimizelegibility;
   font-family: "calendas", Georgia, Cambria, "Times New Roman", Times, serif;
-  color: #6e6e6e;
+  font-size: 10px;
+  color: #8c8c8c;
   -webkit-animation: 1s ease;
   -moz-animation: 1s ease;
   -ms-animation: 1s ease;
@@ -6602,18 +6603,20 @@ header span {
   width: 100%;
   background: rgba(0, 0, 0, 0.45);
 }
-header h1, header nav {
+header nav {
   position: absolute;
   left: 0;
   z-index: 20;
 }
 header h1 {
-  top: 0;
+  position: absolute;
+  top: 40px;
   left: 50%;
+  z-index: 20;
   background: transparent url("../img/mark.png") no-repeat 50% 50%;
   background-size: 100%;
   text-align: center;
-  margin-left: -40px;
+  margin-left: -82px;
   display: block;
   text-indent: -999em;
   overflow: hidden;
@@ -6642,28 +6645,97 @@ header nav a {
   display: flex;
   align-items: flex-start;
   padding: 15px 20px;
+  font-size: 1rem;
 }
 
 section {
-  padding: 20px;
+  position: relative;
+  padding: 80px 20px;
+}
+section span {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  pointer-events: none;
+}
+section h1, section h2, section h3, section h4, section h5, section h6, section p, section a, section div {
+  position: relative;
+  z-index: 100;
 }
 section h2 {
-  font-size: 3rem;
+  display: block;
+  padding: 0 0 20px 0;
+  font-size: 2rem;
   font-weight: 100;
+  text-align: center;
 }
 
 section[id="vineyard"] {
   text-align: center;
 }
-section[id="vineyard"] a {
+section[id="vineyard"] h2 {
+  font-size: 3.5rem;
+}
+section[id="vineyard"] date {
+  font-family: "proxima-nova", helvetica, tahoma, verdana, sans-serif;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+section[id="vineyard"] p[id="countdown"] {
   display: block;
-  float: right;
+  margin-top: 2px;
+  font-size: 0.8rem;
+  font-style: italic;
+}
+section[id="vineyard"] a {
+  position: absolute;
+  display: block;
+  right: 20px;
+  opacity: 0.4;
   margin-top: 10px;
+  color: #333;
+  font-style: italic;
+  font-size: 1.1rem;
+  text-align: right;
+  -webkit-transition: opacity 0.25s ease-in-out;
+  -moz-transition: opacity 0.25s ease-in-out;
+  -ms-transition: opacity 0.25s ease-in-out;
+  -o-transition: opacity 0.25s ease-in-out;
+  transition: opacity 0.25s ease-in-out;
+}
+section[id="vineyard"] a:hover {
+  opacity: 1;
+}
+section[id="vineyard"] a .ss-icon {
+  margin-left: 10px;
+  font-size: 1rem;
+}
+section[id="vineyard"] a.add-to-calendar {
+  top: 20px;
+}
+section[id="vineyard"] a.get-directions {
+  top: 50px;
+}
+
+section[id="history"] {
+  background: transparent url("../img/bg-bridge.jpg") no-repeat 50% 50%;
+  background-size: cover;
 }
 
 footer p {
   display: block;
-  font-size: 1rem;
+  font-size: 1.2rem;
   text-align: center;
+}
+footer p + p {
   text-transform: uppercase;
+  font-size: 1rem;
+  font-family: "proxima-nova", helvetica, tahoma, verdana, sans-serif;
+  font-weight: 700;
 }

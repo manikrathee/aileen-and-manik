@@ -10,7 +10,7 @@
 $white: rgba(255,255,255,1); /* #ffffff */
 $off-white: rgba(248,247,247,1); // #f8f7f7
 $black: rgba(21,19,20,1); /* #151314 */
-$grey: rgba(110,110,110,1); // #6e6e6e
+$grey: rgba(140,140,140,1); // #8c8c8c
 $pink: rgba(253,143,215,1); // #fd8fd7
 
 
@@ -65,6 +65,7 @@ body {
   -webkit-backface-visibility: hidden;
   text-rendering: optimizelegibility;
   font-family: $calendas;
+  font-size: 10px;
   color: $grey;
   @include animate;
   @include fadeIn;
@@ -150,35 +151,98 @@ header {
         display: flex;
         align-items: flex-start;
         padding: 15px 20px;
+        font-size: 1rem;
       }
   }
 }
 
 section {
-  padding: 20px;
+  position: relative;
+  padding: 80px 20px;
+  span:not(.ss-icon) {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    background: rgba(255,255,255,0.9);
+    pointer-events: none;
+  }
+  h1, h2, h3, h4, h5, h6, p, a, div {
+    position: relative;
+    z-index: 100;
+  }
   h2 {
-    font-size: 3rem;
+    display: block;
+    padding: 0 0 20px 0;
+    font-size: 2rem;
     font-weight: 100;
+    text-align: center;
   }
 }
+
 section[id="vineyard"] {
   text-align: center;
   h2 {
-
+    font-size: 3.5rem;
+  }
+  date {
+    font-family: $proxima;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  p[id="countdown"] {
+    display: block;
+    margin-top: 2px;
+    font-size: 0.8rem;
+    font-style: italic;
   }
   a {
+    position: absolute;
     display: block;
-    float: right;
+    right: 20px;
+    opacity: 0.4;
     margin-top: 10px;
+    color: #333;
+    font-style: italic;
+    font-size: 1.1rem;
+    text-align: right;
+    @include transition(opacity 0.25s ease-in-out);
+    &:hover {
+      opacity: 1;
+    }
+    .ss-icon {
+      margin-left: 10px;
+      font-size: 1rem;
+    }
+    &.add-to-calendar {
+      top: 20px;
+    }
+    &.get-directions {
+      top: 50px;
+    }
   }
 }
 
+
+section[id="history"] {
+  background: transparent url('../img/bg-bridge.jpg') no-repeat 50% 50%;
+  background-size: cover;
+}
 
 footer {
   p {
     display: block;
-    font-size: 1rem;
+    font-size: 1.2rem;
     text-align: center;
-    text-transform: uppercase;
+    & + p {
+      text-transform: uppercase;
+      font-size: 1rem;
+      font-family: $proxima;
+      font-weight: 700;
+    }
   }
 }
