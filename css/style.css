@@ -5087,7 +5087,7 @@ section {
           margin-bottom: 0;
           padding: 0 40px 0 0; }
           section div.left h2, section div.left p {
-            width: 85%;
+            width: 92%;
             margin-left: auto;
             margin-right: auto; } }
     @media (min-width: 768px) {
@@ -5096,7 +5096,7 @@ section {
         float: right;
         padding: 0 0 0 40px; }
         section div.right h2, section div.right p {
-          width: 85%;
+          width: 92%;
           margin-left: auto;
           margin-right: auto; } }
     section div.left_swap {
