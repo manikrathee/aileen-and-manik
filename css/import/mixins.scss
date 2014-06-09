@@ -84,10 +84,25 @@
 
 // ClearFix
 @mixin clearfix {
+  // zoom: 1;
+  // &:before, &:after {
+  //   content: "";
+  //   display: table;
+  // }
+  // &:after {
+  //   clear: both;
+  // }
+
   zoom: 1;
   &:before, &:after {
-    content: "";
-    display: table;
+    content: '.';
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    font-size: 0;
+    line-height: 0;
+    width: 0;
+    height: 0;
   }
   &:after {
     clear: both;

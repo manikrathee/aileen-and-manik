@@ -5015,6 +5015,18 @@ a {
     color: #ffadad;
     border-color: #ffadad; }
 
+section[id="history"] > span, section[id="proposal"] span, section[id="accomodations"] .hotel-block span, section[id="venue"] .right span, section[id="registry"] span {
+  display: block;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 51px 60px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 51px;
+  height: 60px;
+  border-radius: 0; }
+
 .container {
   background: white;
   padding: 0;
@@ -5285,14 +5297,13 @@ section[id="join-us"] {
             text-align: center; } }
 
 section[id="history"] > span {
-  display: block;
-  background: transparent url("../img/icon-history.png") no-repeat 50% 50%;
-  background-size: 51px 60px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 51px;
-  height: 60px;
-  border-radius: 0; }
+  background-image: url("../img/icon-history.png"); }
+  @media (min-width: 768px) {
+    section[id="history"] > span {
+      position: absolute;
+      top: 200px;
+      left: 50%;
+      margin-left: -25px; } }
 section[id="history"] h2 {
   margin-bottom: 40px;
   font-style: normal; }
@@ -5306,6 +5317,14 @@ section[id="proposal"] h2 {
   margin-bottom: 40px;
   font-style: italic;
   text-align: center; }
+section[id="proposal"] span {
+  background-image: url("../img/icon-proposal.png"); }
+  @media (min-width: 768px) {
+    section[id="proposal"] span {
+      position: absolute;
+      top: 260px;
+      left: 50%;
+      margin-left: -25px; } }
 
 section[id="accomodations"] .alt-hotel {
   color: #ffadad; }
@@ -5353,6 +5372,7 @@ section[id="accomodations"] .accomodations-button {
     font-weight: 300;
     pointer-events: none; }
 section[id="accomodations"] .hotel-block {
+  position: relative;
   background: #f8f7f7;
   width: 100%;
   padding: 20px 0;
@@ -5365,13 +5385,7 @@ section[id="accomodations"] .hotel-block {
       width: 300px;
       padding: 0; } }
   section[id="accomodations"] .hotel-block span {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    background: red;
-    width: 50px;
-    height: 50px;
-    border-radius: 0; }
+    background-image: url("../img/icon-accomodations.png"); }
   section[id="accomodations"] .hotel-block .name {
     opacity: 0.7;
     margin-top: 40px;
@@ -5388,12 +5402,7 @@ section[id="accomodations"] .hotel-block {
       margin: 0 auto 40px; }
 
 section[id="venue"] .right span {
-  display: block;
-  background: red;
-  margin: 20px auto;
-  width: 50px;
-  height: 50px;
-  border-radius: 0; }
+  background-image: url("../img/icon-venue.png"); }
 section[id="venue"] .right p {
   opacity: 0.65;
   font-style: italic; }
@@ -5414,12 +5423,7 @@ section[id="registry"] .button {
   margin-right: auto;
   text-align: center; }
 section[id="registry"] span {
-  display: block;
-  background: red;
-  margin: 20px auto;
-  width: 50px;
-  height: 50px;
-  border-radius: 0; }
+  background-image: url("../img/icon-registry.png"); }
 
 footer {
   position: fixed;

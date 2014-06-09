@@ -143,6 +143,20 @@ a {
   }
 }
 
+
+%section-icon {
+  display: block;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 51px 60px;
+  margin-left: auto;
+  margin-right: auto;
+  @include size(51px, 60px);
+}
+
+
+
 .container {
   background: $white;
   padding: 0;
@@ -496,14 +510,13 @@ section[id="join-us"] {
 
 section[id="history"] {
   & > span {
-    display: block;
-    background: transparent url('../img/icon-history.png') no-repeat 50% 50%;
-    background-size: 51px 60px;
-    margin-left: auto;
-    margin-right: auto;
-    @include size(51px, 60px);
+    @extend %section-icon;
+    background-image: url('../img/icon-history.png');
     @media (min-width: 768px) {
-
+      position: absolute;
+      top: 200px;
+      left: 50%;
+      margin-left: -25px;
     }
   }
   h2 {
@@ -516,8 +529,6 @@ section[id="history"] {
       text-align: center;
     }
   }
-
-
 }
 
 section[id="proposal"] {
@@ -526,7 +537,16 @@ section[id="proposal"] {
     font-style: italic;
     text-align: center;
   }
-  span {  }
+  span {
+    @extend %section-icon;
+    background-image: url('../img/icon-proposal.png');
+    @media (min-width: 768px) {
+      position: absolute;
+      top: 260px;
+      left: 50%;
+      margin-left: -25px;
+    }
+  }
 }
 
 
@@ -576,6 +596,7 @@ section[id="accomodations"] {
     }
   }
   .hotel-block {
+    position: relative;
     background: $off-white;
     width: 100%;
     padding: 20px 0;
@@ -588,11 +609,14 @@ section[id="accomodations"] {
       padding: 0;
     }
     span {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      background:red;
-      @include size(50px, 50px);
+      @extend %section-icon;
+      background-image: url('../img/icon-accomodations.png');
+      // @media (min-width: 768px) {
+        // position: absolute;
+        // top: 0;
+        // left: 50%;
+        // margin-left: -25px;
+      // }
     }
     .name {
       opacity: 0.7;
@@ -618,10 +642,14 @@ section[id="accomodations"] {
 section[id="venue"] {
   .right {
     span {
-      display: block;
-      background: red;
-      margin: 20px auto;
-      @include size(50px,50px);
+      @extend %section-icon;
+      background-image: url('../img/icon-venue.png');
+      // @media (min-width: 768px) {
+        // position: absolute;
+        // top: 0;
+        // left: 50%;
+        // margin-left: -25px;
+      // }
     }
     p {
       opacity: 0.65;
@@ -654,10 +682,14 @@ section[id="registry"] {
     text-align: center;
   }
   span {
-    display: block;
-    background: red;
-    margin: 20px auto;
-    @include size(50px,50px);
+    @extend %section-icon;
+    background-image: url('../img/icon-registry.png');
+    // @media (min-width: 768px) {
+      // position: absolute;
+      // top: 0;
+      // left: 50%;
+      // margin-left: -25px;
+    // }
   }
 }
 
