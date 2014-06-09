@@ -257,6 +257,11 @@ section {
         float: left;
         margin-bottom: 0;
         padding: 0 40px 0 0;
+        h2, p {
+          width: 92%;
+          margin-left: auto;
+          margin-right: auto;
+        }
       }
     }
     &.right {
@@ -265,7 +270,7 @@ section {
         float: right;
         padding: 0 0 0 40px;
         h2, p {
-          width: 85%;
+          width: 92%;
           margin-left: auto;
           margin-right: auto;
         }
@@ -323,6 +328,8 @@ section[id="join-us"] {
     padding: 0;
     font-size: 2.2rem;
     font-weight: normal;
+    font-style: normal;
+    text-align: center;
   }
   .join-us-at {
     position: relative;
@@ -488,7 +495,19 @@ section[id="join-us"] {
 
 
 section[id="history"] {
+  & > span {
+    display: block;
+    background: transparent url('../img/icon-history.png') no-repeat 50% 50%;
+    background-size: 51px 60px;
+    margin-left: auto;
+    margin-right: auto;
+    @include size(51px, 60px);
+    @media (min-width: 768px) {
+
+    }
+  }
   h2 {
+    margin-bottom: 40px;
     font-style: normal;
     i {
       font-style: italic;
@@ -497,14 +516,15 @@ section[id="history"] {
       text-align: center;
     }
   }
-  span {
-  }
+
 
 }
 
 section[id="proposal"] {
   h2 {
+    margin-bottom: 40px;
     font-style: italic;
+    text-align: center;
   }
   span {  }
 }
@@ -564,7 +584,7 @@ section[id="accomodations"] {
     text-align: center;
     @media (min-width: 768px) {
       background: transparent;
-      width: 250px;
+      width: 300px;
       padding: 0;
     }
     span {
@@ -575,18 +595,20 @@ section[id="accomodations"] {
       @include size(50px, 50px);
     }
     .name {
+      opacity: 0.7;
       margin-top: 40px;
       margin-bottom: 30px;
       font-size: 1.2rem;
       font-style: italic;
     }
     .details {
+      opacity: 0.7;
       font-family: $proxima;
       font-size: 0.75rem;
       font-weight: 500;
       text-transform: uppercase;
       & + p {
-        margin: 0 0 40px 0;
+        margin: 0 auto 40px;
       }
     }
   }
@@ -628,8 +650,14 @@ section[id="registry"] {
     width: 105px;
     margin-left: auto;
     margin-right: auto;
-    padding: 6px 0;
+    // padding: 6px 0;
     text-align: center;
+  }
+  span {
+    display: block;
+    background: red;
+    margin: 20px auto;
+    @include size(50px,50px);
   }
 }
 
