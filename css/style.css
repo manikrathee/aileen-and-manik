@@ -6509,6 +6509,12 @@ a:link {
   -webkit-tap-highlight-color: none;
 }
 
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 html, :root {
   -webkit-text-size-adjust: none;
   -moz-text-size-adjust: none;
@@ -6570,7 +6576,7 @@ p {
 }
 
 a {
-  color: #fd8fd7;
+  color: #ffadad;
   text-decoration: none;
   -webkit-transition: color 0.25s ease-in-out;
   -moz-transition: color 0.25s ease-in-out;
@@ -6579,7 +6585,7 @@ a {
   transition: color 0.25s ease-in-out;
 }
 a:hover {
-  color: #fc5dc5;
+  color: #ff7a7a;
 }
 
 .container {
@@ -6644,7 +6650,6 @@ header nav ul {
   flex-wrap: wrap;
   justify-content: space-around;
   width: 90%;
-  max-width: 600px;
   margin: 0 auto;
   padding: 0;
   list-style: none;
@@ -6654,22 +6659,15 @@ header nav a {
   align-items: flex-start;
   padding: 15px 20px;
   font-size: 1rem;
+  color: #fff;
+}
+header nav a:hover {
+  color: #f2f2f2;
 }
 
 section {
   position: relative;
   padding: 80px 20px;
-}
-section span:not(.ss-icon) {
-  display: block;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-  width: 100%;
-  background: rgba(255, 255, 255, 0.9);
-  pointer-events: none;
 }
 section h1, section h2, section h3, section h4, section h5, section h6, section p, section a, section div {
   position: relative;
@@ -6678,16 +6676,33 @@ section h1, section h2, section h3, section h4, section h5, section h6, section 
 section h2 {
   display: block;
   padding: 0 0 40px 0;
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: 100;
   text-align: center;
 }
 
+.container {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 100px;
+}
+@media (min-width: 768px) {
+  .container section {
+    min-height: 500px;
+  }
+}
+
 section[id="vineyard"] {
+  transform: perspective(600px);
   text-align: center;
+}
+section[id="vineyard"] > * {
+  transform: perspective(0);
 }
 section[id="vineyard"] h2 {
   font-size: 4rem;
+  color: #ffadad;
+  padding: 0;
 }
 section[id="vineyard"] date {
   font-family: "proxima-nova", helvetica, tahoma, verdana, sans-serif;
@@ -6697,15 +6712,13 @@ section[id="vineyard"] date {
 }
 section[id="vineyard"] p[id="countdown"] {
   display: block;
-  margin-top: 2px;
+  opacity: 0.75;
   font-size: 0.8rem;
   font-style: italic;
 }
 section[id="vineyard"] a {
-  position: absolute;
   display: block;
-  right: 20px;
-  opacity: 0.4;
+  overflow: hidden;
   margin-top: 10px;
   color: #333;
   font-style: italic;
@@ -6720,31 +6733,76 @@ section[id="vineyard"] a {
 section[id="vineyard"] a:hover {
   opacity: 1;
 }
+section[id="vineyard"] a i, section[id="vineyard"] a .ss-icon {
+  float: left;
+}
+section[id="vineyard"] a i {
+  font-size: 0.9rem;
+}
 section[id="vineyard"] a .ss-icon {
   margin-left: 10px;
   font-size: 1rem;
 }
-section[id="vineyard"] a.add-to-calendar {
-  top: 20px;
-}
-section[id="vineyard"] a.get-directions {
-  top: 50px;
+@media (min-width: 768px) {
+  section[id="vineyard"] a {
+    position: absolute;
+    right: 20px;
+    opacity: 0.4;
+  }
+  section[id="vineyard"] a.add-to-calendar {
+    top: 20px;
+  }
+  section[id="vineyard"] a.get-directions {
+    top: 50px;
+  }
 }
 
 section[id="history"] {
-  background: transparent url("../img/bg-bridge.jpg") no-repeat 50% 50%;
+  background: transparent url("../img/bg-one.png") no-repeat 50% 50%;
   background-size: cover;
 }
+@media (min-width: 768px) {
+  section[id="history"] p.columns {
+    -moz-column-count: 2;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 20px;
+  }
+}
 
+section[id="registry"] {
+  background: transparent url("../img/bg-two.png") no-repeat 100% 50%;
+  background-size: cover;
+}
+@media (min-width: 768px) {
+  section[id="registry"] p.columns {
+    -moz-column-count: 2;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 20px;
+  }
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+  padding: 20px 0;
+  color: #fff;
+}
 footer p {
   display: block;
   font-size: 1.2rem;
   text-align: center;
 }
-footer p .ss-icon {
-  font-size: 0.8rem;
+footer .ss-icon {
+  display: block;
+  text-align: center;
+  font-size: 0.6rem;
 }
-footer p + p {
+footer .ss-icon + p {
   display: block;
   margin-top: 5px;
   text-transform: uppercase;

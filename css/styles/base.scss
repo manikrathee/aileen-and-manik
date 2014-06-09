@@ -11,7 +11,7 @@ $white: rgba(255,255,255,1); /* #ffffff */
 $off-white: rgba(248,247,247,1); // #f8f7f7
 $black: rgba(21,19,20,1); /* #151314 */
 $grey: rgba(140,140,140,1); // #8c8c8c
-$pink: rgba(253,143,215,1); // #fd8fd7
+$pink: rgba(255,173,173,1); // #ffadad
 
 
 // Base Type
@@ -43,6 +43,11 @@ $divider: 1px solid rgba(229,229,229,1); /* #E5E5E5 */
 ::selection { background:#333; color:#fff; text-shadow: none; }
 a:link { -webkit-tap-highlight-color: none; }
 
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
 
 // Global Elements
 html, :root {
@@ -148,7 +153,7 @@ header {
         flex-wrap: wrap;
         justify-content: space-around;
         width: 90%;
-        max-width: 600px;
+        // max-width: 600px;
         margin: 0 auto;
         padding: 0;
         list-style: none;
@@ -158,6 +163,10 @@ header {
         align-items: flex-start;
         padding: 15px 20px;
         font-size: 1rem;
+        color: #fff;
+        &:hover {
+          color: darken(#fff, 5%);
+        }
       }
   }
 }
@@ -165,17 +174,17 @@ header {
 section {
   position: relative;
   padding: 80px 20px;
-  span:not(.ss-icon) {
-    display: block;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 1;
-    width: 100%;
-    background: rgba(255,255,255,0.9);
-    pointer-events: none;
-  }
+  // span:not(.ss-icon) {
+  //   display: block;
+  //   position: absolute;
+  //   top: 0;
+  //   bottom: 0;
+  //   left: 0;
+  //   z-index: 1;
+  //   width: 100%;
+  //   background: rgba(255,255,255,0.9);
+  //   pointer-events: none;
+  // }
   h1, h2, h3, h4, h5, h6, p, a, div {
     position: relative;
     z-index: 100;
@@ -183,16 +192,36 @@ section {
   h2 {
     display: block;
     padding: 0 0 40px 0;
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: 100;
     text-align: center;
   }
 }
 
+.container {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 100px;
+  section {
+    // &:nth-child(odd) {
+      // background-color: darken(#fff, 3%);
+    // }
+    @media (min-width: 768px) {
+      min-height: 500px;
+    }
+  }
+}
+
 section[id="vineyard"] {
+  transform: perspective( 600px );
+  & > * {
+    transform: perspective( 0 );
+  }
   text-align: center;
   h2 {
     font-size: 4rem;
+    color: $pink;
+    padding: 0;
   }
   date {
     font-family: $proxima;
@@ -202,15 +231,13 @@ section[id="vineyard"] {
   }
   p[id="countdown"] {
     display: block;
-    margin-top: 2px;
+    opacity: 0.75;
     font-size: 0.8rem;
     font-style: italic;
   }
   a {
-    position: absolute;
     display: block;
-    right: 20px;
-    opacity: 0.4;
+    overflow: hidden;
     margin-top: 10px;
     color: #333;
     font-style: italic;
@@ -220,33 +247,79 @@ section[id="vineyard"] {
     &:hover {
       opacity: 1;
     }
+    i, .ss-icon {
+      float: left;
+    }
+    i {
+      font-size: 0.9rem;
+      // font-style: normal;
+    }
     .ss-icon {
       margin-left: 10px;
       font-size: 1rem;
     }
-    &.add-to-calendar {
-      top: 20px;
-    }
-    &.get-directions {
-      top: 50px;
+    @media (min-width: 768px) {
+      position: absolute;
+      right: 20px;
+      opacity: 0.4;
+      &.add-to-calendar {
+        top: 20px;
+      }
+      &.get-directions {
+        top: 50px;
+      }
     }
   }
 }
 
 
 section[id="history"] {
-  background: transparent url('../img/bg-bridge.jpg') no-repeat 50% 50%;
+  background: transparent url('../img/bg-one.png') no-repeat 50% 50%;
   background-size: cover;
+  p.columns {
+    @media (min-width: 768px) {
+      -moz-column-count: 2;
+      -moz-column-gap: 20px;
+      -webkit-column-count: 2;
+      -webkit-column-gap: 20px;
+    }
+  }
 }
 
+
+
+section[id="registry"] {
+  background: transparent url("../img/bg-two.png") no-repeat 100% 50%;
+  background-size: cover;
+  p.columns {
+    @media (min-width: 768px) {
+      -moz-column-count: 2;
+      -moz-column-gap: 20px;
+      -webkit-column-count: 2;
+      -webkit-column-gap: 20px;
+    }
+  }
+}
+
+
+
 footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+  padding: 20px 0;
+  color: #fff;
   p {
     display: block;
     font-size: 1.2rem;
     text-align: center;
-    .ss-icon {
-      font-size: 0.8rem;
-    }
+  }
+  .ss-icon {
+    display: block;
+    text-align: center;
+    font-size: 0.6rem;
     & + p {
       display: block;
       margin-top: 5px;
