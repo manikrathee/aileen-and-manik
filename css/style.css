@@ -5352,7 +5352,7 @@ section[id="accomodations"] .accomodations-button {
   transition: color 0.25s ease-in-out, border 0.25s ease-in-out; }
   @media (min-width: 768px) {
     section[id="accomodations"] .accomodations-button {
-      margin: 30px 0 0 0; }
+      margin: 30px 0 0 15px; }
       section[id="accomodations"] .accomodations-button:hover {
         color: #ffadad;
         border-color: #ffadad; } }
