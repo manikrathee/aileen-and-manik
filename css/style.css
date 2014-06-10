@@ -5326,7 +5326,7 @@ section[id="proposal"] span {
   @media (min-width: 768px) {
     section[id="proposal"] span {
       position: absolute;
-      top: 260px;
+      top: 230px;
       left: 50%;
       margin-left: -25px; } }
 
