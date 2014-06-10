@@ -735,4 +735,18 @@ footer {
   // font-family: $proxima;
   // font-size: 1rem;
   // color: $grey;
+  input {
+    width: 100%;
+    max-width: 100%;
+    @include box;
+  }
+  [id="first-name"] {
+    width: 48%;
+    float: left;
+  }
+  [id="last-name"] {
+    width: 48%;
+    float: right;
+    @include clearfix;
+  }
 }

@@ -5456,3 +5456,28 @@ footer {
 #mc_embed_signup {
   background: #fff;
   clear: left; }
+  #mc_embed_signup input {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+  #mc_embed_signup [id="first-name"] {
+    width: 48%;
+    float: left; }
+  #mc_embed_signup [id="last-name"] {
+    width: 48%;
+    float: right;
+    zoom: 1; }
+    #mc_embed_signup [id="last-name"]:before, #mc_embed_signup [id="last-name"]:after {
+      content: '.';
+      display: block;
+      overflow: hidden;
+      visibility: hidden;
+      font-size: 0;
+      line-height: 0;
+      width: 0;
+      height: 0; }
+    #mc_embed_signup [id="last-name"]:after {
+      clear: both; }
