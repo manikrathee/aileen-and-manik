@@ -165,6 +165,11 @@ a {
   @media (min-width: 768px) {
     padding: 0 30px;
   }
+  &.bare {
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 header {
   position: relative;
@@ -721,4 +726,13 @@ footer {
       font-weight: 700;
     }
   }
+}
+
+
+#mc_embed_signup{
+  background:#fff;
+  clear:left;
+  // font-family: $proxima;
+  // font-size: 1rem;
+  // color: $grey;
 }

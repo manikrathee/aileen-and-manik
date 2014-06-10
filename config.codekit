@@ -1008,6 +1008,61 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/icon-accomodations.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5915,
+		"inputAbbreviatedPath": "\/img\/icon-accomodations.png",
+		"outputAbbreviatedPath": "\/img\/icon-accomodations.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/icon-history.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 6157,
+		"inputAbbreviatedPath": "\/img\/icon-history.png",
+		"outputAbbreviatedPath": "\/img\/icon-history.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/icon-proposal.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 8116,
+		"inputAbbreviatedPath": "\/img\/icon-proposal.png",
+		"outputAbbreviatedPath": "\/img\/icon-proposal.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/icon-registry.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 6503,
+		"inputAbbreviatedPath": "\/img\/icon-registry.png",
+		"outputAbbreviatedPath": "\/img\/icon-registry.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/icon-venue.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 8578,
+		"inputAbbreviatedPath": "\/img\/icon-venue.png",
+		"outputAbbreviatedPath": "\/img\/icon-venue.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/mark.png": {
 		"fileType": 32768,
 		"ignore": 0,

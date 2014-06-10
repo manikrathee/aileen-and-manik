@@ -5035,6 +5035,10 @@ section[id="history"] > span, section[id="proposal"] span, section[id="accomodat
   @media (min-width: 768px) {
     .container {
       padding: 0 30px; } }
+  .container.bare {
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0; }
 
 header {
   position: relative;
@@ -5448,3 +5452,7 @@ footer {
       font-size: 0.8rem;
       font-family: "proxima-nova", helvetica, tahoma, verdana, sans-serif;
       font-weight: 700; }
+
+#mc_embed_signup {
+  background: #fff;
+  clear: left; }
