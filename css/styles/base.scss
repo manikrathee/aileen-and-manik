@@ -86,9 +86,9 @@ body {
   @include animate;
   @include fadeIn;
   @media (min-width: 1240px) {
-    background-image: url('../img/footer-bg.png');
+    background-image: url('../img/footer-bg.jpg');
     background-repeat: no-repeat;
-    background-position: 46% 116%;
+    background-position: 46% 114%;
     background-size: 2400px auto;
   }
 }
@@ -538,7 +538,7 @@ section[id="proposal"] {
       position: absolute;
       top: 230px;
       left: 50%;
-      margin-left: -25px;
+      margin-left: -29px;
     }
   }
 }
@@ -604,7 +604,7 @@ section[id="accomodations"] {
     @media (min-width: 768px) {
       background: transparent;
       width: 300px;
-      padding: 0;
+      padding: 40px 0 0 0;
     }
     span {
       @extend %section-icon;
@@ -642,7 +642,15 @@ section[id="venue"] {
     background: transparent url('../img/bg-section-venue.jpg') no-repeat 102% 47%;
     background-size: 55%;
   }
+  .left {
+    @media (min-width: 768px) {
+      margin-top: -20px;
+    }
+  }
   .right {
+    @media (min-width: 768px) {
+      margin-top: 80px;
+    }
     span {
       @extend %section-icon;
       background-image: url('../img/icon-venue.png');
@@ -670,7 +678,7 @@ section[id="venue"] {
 
 section[id="registry"] {
   @media (min-width: 768px) {
-    background: transparent url('../img/bg-section-registry.jpg') no-repeat 0% 47%;
+    background: transparent url('../img/bg-section-registry.jpg') no-repeat 15% 66%;
     background-size: 55%;
   }
   h6 {
