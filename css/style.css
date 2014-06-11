@@ -4898,7 +4898,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 @font-face {
   font-family: 'calendas-plus';
   src: url("calendas_plus-webfont.eot");
-  src: url("calendas_plus-webfont.eot?#iefix") format("embedded-opentype"), url("calendas_plus-webfont.woff") format("woff"), url("calendas_plus-webfont.ttf") format("truetype"), url("calendas_plus-webfont.svg#calendas-plus") format("svg");
+  src: url("calendas_plus-webfont.eot?#iefix") format("embedded-opentype");
   font-weight: normal;
   font-style: normal; }
 /* Variables */
@@ -4976,7 +4976,7 @@ h1, h2, h3, h4, h5, h6, p, a {
   line-height: 1; }
 
 p, a {
-  font-size: 0.8rem; }
+  font-size: 0.9rem; }
 
 p {
   line-height: 1.6; }
@@ -5132,9 +5132,9 @@ section {
     width: 100%;
     max-width: 700px;
     opacity: 0.75;
-    margin: 40px auto;
+    margin: 30px auto;
     font-size: 1.2rem;
-    line-height: 1.25;
+    line-height: 1.5;
     font-style: italic;
     text-align: center; }
     section blockquote br {
@@ -5147,6 +5147,8 @@ section {
   position: relative;
   z-index: 2;
   margin-bottom: 100px; }
+  .container.final {
+    margin-bottom: 0; }
 
 section[id="join-us"] {
   text-align: center; }
@@ -5308,6 +5310,8 @@ section[id="history"] > span {
       top: 200px;
       left: 50%;
       margin-left: -25px; } }
+section[id="history"] .wrapper {
+  overflow: hidden; }
 section[id="history"] h2 {
   margin-bottom: 40px;
   font-style: normal; }
@@ -5429,22 +5433,38 @@ section[id="registry"] .button {
 section[id="registry"] span {
   background-image: url("../img/icon-registry.png"); }
 
+section[id="sign-up"] {
+  padding-top: 20px;
+  padding-bottom: 10px; }
+
 footer {
   position: fixed;
   left: 0;
   bottom: 0;
   z-index: 1;
   width: 100%;
-  padding: 20px 0;
-  color: #fff; }
+  padding: 20px 0; }
+  footer p, footer a {
+    font-size: 16px;
+    text-align: center;
+    font-weight: 700;
+    color: #8c8c8c; }
+    @media (min-width: 1240px) {
+      footer p, footer a {
+        color: white; } }
   footer p {
-    display: block;
-    font-size: 1.2rem;
-    text-align: center; }
+    display: block; }
+  footer em {
+    font-weight: 500;
+    font-size: 20px; }
   footer .ss-icon {
     display: block;
     text-align: center;
-    font-size: 0.6rem; }
+    font-size: 0.6rem;
+    color: #8c8c8c; }
+    @media (min-width: 1240px) {
+      footer .ss-icon {
+        color: white; } }
     footer .ss-icon + p {
       display: block;
       margin-top: 5px;
@@ -5454,30 +5474,127 @@ footer {
       font-weight: 700; }
 
 #mc_embed_signup {
+  position: relative;
   background: #fff;
-  clear: left; }
+  padding: 80px 20px 40px;
+  clear: left;
+  font-family: "proxima-nova", helvetica, tahoma, verdana, sans-serif;
+  font-size: 1rem;
+  color: #8c8c8c; }
   #mc_embed_signup input {
     width: 100%;
     max-width: 100%;
+    font-family: "proxima-nova", helvetica, tahoma, verdana, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 100;
     display: block;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box; }
-  #mc_embed_signup [id="first-name"] {
-    width: 48%;
-    float: left; }
-  #mc_embed_signup [id="last-name"] {
-    width: 48%;
-    float: right;
-    zoom: 1; }
-    #mc_embed_signup [id="last-name"]:before, #mc_embed_signup [id="last-name"]:after {
-      content: '.';
+    #mc_embed_signup input:focus {
+      outline: 0; }
+  #mc_embed_signup label {
+    font-size: 0.7rem;
+    font-weight: 500;
+    text-transform: uppercase; }
+  #mc_embed_signup #first-name {
+    width: 45%;
+    float: left;
+    clear: none;
+    display: block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+  #mc_embed_signup #last-name {
+    width: 45%;
+    float: left;
+    clear: none;
+    margin-left: 10%;
+    display: block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+  #mc_embed_signup #email {
+    width: 100%;
+    display: block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+  #mc_embed_signup #sms {
+    margin-bottom: 10px;
+    padding: 0;
+    min-height: initial; }
+    #mc_embed_signup #sms input, #mc_embed_signup #sms label {
+      cursor: pointer; }
+    #mc_embed_signup #sms input:hover + label {
+      opacity: 1; }
+    #mc_embed_signup #sms label {
+      margin-left: 8px;
+      font-style: italic;
+      font-family: "calendas-plus", Georgia, Cambria, "Times New Roman", Times, serif;
+      font-size: 0.9rem;
+      text-transform: none;
+      opacity: 0.75; }
+  #mc_embed_signup #phone {
+    display: block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 0;
+    overflow: hidden;
+    display: none;
+    -webkit-transition: height 0.25s ease-in-out;
+    -moz-transition: height 0.25s ease-in-out;
+    -ms-transition: height 0.25s ease-in-out;
+    -o-transition: height 0.25s ease-in-out;
+    transition: height 0.25s ease-in-out; }
+    #mc_embed_signup #phone.is-shown {
       display: block;
-      overflow: hidden;
-      visibility: hidden;
-      font-size: 0;
-      line-height: 0;
-      width: 0;
-      height: 0; }
-    #mc_embed_signup [id="last-name"]:after {
-      clear: both; }
+      height: 50px;
+      -webkit-animation: 0.5s ease;
+      -moz-animation: 0.5s ease;
+      -ms-animation: 0.5s ease;
+      -o-animation: 0.5s ease;
+      animation: 0.5s ease;
+      -webkit-animation-fill-mode: both;
+      -moz-animation-fill-mode: both;
+      -ms-animation-fill-mode: both;
+      -o-animation-fill-mode: both;
+      animation-fill-mode: both;
+      -webkit-animation-name: fadeIn;
+      -moz-animation-name: fadeIn;
+      -o-animation-name: fadeIn;
+      animation-name: fadeIn; }
+  #mc_embed_signup #mc-embedded-subscribe {
+    display: block;
+    width: 150px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background: #ffadad;
+    margin-top: 20px;
+    padding: 2px 20px;
+    font-family: "proxima-nova", helvetica, tahoma, verdana, sans-serif;
+    font-size: 0.8rem;
+    border-radius: 0;
+    display: block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+    #mc_embed_signup #mc-embedded-subscribe:hover {
+      background-color: #ff7a7a; }
+  #mc_embed_signup div.mce_inline_error {
+    background: #ffb2b2 !important;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: normal !important;
+    font-family: "proxima-nova", helvetica, tahoma, verdana, sans-serif; }
+  #mc_embed_signup div.response,
+  #mc_embed_signup #mce-error-response,
+  #mc_embed_signup #mce-success-response {
+    display: block;
+    width: 100%;
+    font-size: 0.8rem;
+    opacity: 0.75;
+    margin-top: 40px;
+    text-align: center; }

@@ -110,12 +110,14 @@
     <section id="history">
       <span></span>
       <h2>When Harry met Sally, <i>almost</i>.</h2>
-      <div class="left">
-        <p>Aileen and Manik met in college, at Rutgers University where they woere both undergrads. They quickly discovered that they both grew up just minutes away from each other in New Jersey. They both had the same interests: from the bands they listened to down to the fact that they both always enjoyed having a camera in their hand.</p>
-      </div>
-      <div class="right">
-        <p>It didn’t take long for them to realize that they were perfect for each other. They both finished college—Aileen graduating from Rutgers with a Bachelors in Finance, and Manik from Kean University, with a Bachelors in Advertising and Graphic Design—and started on the next piece of their journey, together.</p>
-      </div>
+      <div class="wrapper">
+        <div class="left">
+          <p>Aileen and Manik met in college, at Rutgers University where they woere both undergrads. They quickly discovered that they both grew up just minutes away from each other in New Jersey. They both had the same interests: from the bands they listened to down to the fact that they both always enjoyed having a camera in their hand.</p>
+        </div>
+        <div class="right">
+          <p>It didn’t take long for them to realize that they were perfect for each other. They both finished college—Aileen graduating from Rutgers with a Bachelors in Finance, and Manik from Kean University, with a Bachelors in Advertising and Graphic Design—and started on the next piece of their journey, together.</p>
+        </div>
+      </div> <!-- /wrapper -->
       <blockquote>When you realize you want to spend the rest of your life with a person, <br>you want the rest of your life to start as soon as possible.</blockquote>
     </section>
 
@@ -204,21 +206,20 @@
 
             <div id="first-name" class="mc-field-group">
               <label for="mce-FNAME">First Name </label>
-              <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+              <input type="text" value="" name="FNAME" class="required" id="mce-FNAME">
             </div>
             <div id="last-name" class="mc-field-group">
               <label for="mce-LNAME">Last Name </label>
-              <input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+              <input type="text" value="" name="LNAME" class="required" id="mce-LNAME">
             </div>
-            <div class="mc-field-group">
-              <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
-            </label>
+            <div id="email" class="mc-field-group">
+              <label for="mce-EMAIL">Email Address</label>
               <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
             </div>
-            <div class="mc-field-group input-group">
+            <div id="sms" class="mc-field-group input-group">
               <input type="checkbox" value="1" name="group[17505][1]" id="mce-group[17505]-17505-0"><label for="mce-group[17505]-17505-0">I want SMS Notifications for Wedding Events</label>
             </div>
-            <div class="mc-field-group size1of2">
+            <div id="phone" class="mc-field-group size1of2">
               <label for="mce-MMERGE3">Phone Number </label>
                 <div class="phonefield phonefield-us">
                     (<span class="phonearea"><input pattern="[0-9]*" id="mce-MMERGE3-area" name="MMERGE3[area]" maxlength="3" size="3" value="" type="text"></span>)
@@ -227,25 +228,19 @@
                 <div class="fake-phone"><input type="hidden" class=" phone" id="MMERGE3-fake-phone" value=""></div>
                 </div>
             </div>
+            <div style="position: absolute; left: -5000px;"><input type="text" name="b_c9b2c969c35a3d185791eba25_77c020e7ae" tabindex="-1" value=""></div>
+            <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
             <div id="mce-responses" class="clear">
               <div class="response" id="mce-error-response" style="display:none"></div>
               <div class="response" id="mce-success-response" style="display:none"></div>
             </div>
-
-            <div style="position: absolute; left: -5000px;"><input type="text" name="b_c9b2c969c35a3d185791eba25_77c020e7ae" tabindex="-1" value=""></div>
-            <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
           </form>
         </div> <!-- /Form -->
-
       </div>
     </section>
-
-
-
-
   </section> <!-- /section.container.row -->
 
-  <section class="container row">
+  <section class="container row final">
     Map
     <iframe width='100%' height='500px' frameBorder='0' src='http://a.tiles.mapbox.com/v3/manikrathee.i5003c0i/attribution,zoompan,zoomwheel,geocoder.html'></iframe>
   </section> <!-- /section.container.row -->
@@ -256,9 +251,7 @@
   <footer>
     <small>
       <p>
-        Only one is a wanderer; two together are always going somewhere.</p>
-      <p>
-        <a href="http://photos.manikrathee.com/a-paris-engagement" title="Wanderlust" itemprop="url">
+        <a href="http://photos.manikrathee.com/a-paris-engagement" title="Only one is a wanderer; two together are always going somewhere." itemprop="url">
           <em>Wanderlust</em>
         </a>
       </p>
