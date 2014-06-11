@@ -65,8 +65,7 @@ a:link { -webkit-tap-highlight-color: none; }
 }
 
 // Global Elements
-html, :root {
-}
+html, :root {}
 body {
   background: $off-white;
   -webkit-backface-visibility: hidden;
@@ -80,15 +79,6 @@ body {
   -o-font-feature-settings: 'liga' 1, 'onum' 1, 'dlig' 1;
   -webkit-font-feature-settings: 'liga' 1, 'onum' 1, 'dlig' 1;
   font-feature-settings: 'liga' 1, 'onum' 1, 'dlig' 1;
-
-  // -moz-font-feature-settings: "liga=1, dlig=1";
-  // -moz-font-feature-settings: "liga", "dlig";
-  // -ms-font-feature-settings: "liga", "dlig";
-  // -o-font-feature-settings: "liga", "dlig";
-  // -webkit-font-feature-settings: "liga", "dlig";
-  // font-feature-settings: "liga", "dlig";
-  // font-feature-settings: 'liga' 1, 'onum' 1, 'dlig' 1;
-  // font-variant-ligatures: common-ligatures discretionary-ligatures;
   text-rendering: optimizelegibility;
   font-family: $calendas;
   font-size: 10px;
@@ -98,7 +88,7 @@ body {
   @media (min-width: 1240px) {
     background-image: url('../img/footer-bg.png');
     background-repeat: no-repeat;
-    background-position: 46% 115%;
+    background-position: 46% 123%;
     background-size: 2400px auto;
   }
 }
@@ -734,7 +724,8 @@ footer {
   .ss-icon {
     display: block;
     text-align: center;
-    font-size: 0.6rem;
+    font-size: 0.75rem;
+    margin: 4px 0;
     color: $grey;
     @media (min-width: 1240px) {
       color: $white;

@@ -4967,7 +4967,7 @@ body {
     body {
       background-image: url("../img/footer-bg.png");
       background-repeat: no-repeat;
-      background-position: 46% 115%;
+      background-position: 46% 123%;
       background-size: 2400px auto; } }
 
 h1, h2, h3, h4, h5, h6, p, a {
@@ -5460,7 +5460,8 @@ footer {
   footer .ss-icon {
     display: block;
     text-align: center;
-    font-size: 0.6rem;
+    font-size: 0.75rem;
+    margin: 4px 0;
     color: #8c8c8c; }
     @media (min-width: 1240px) {
       footer .ss-icon {
