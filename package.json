@@ -1,7 +1,11 @@
 {
-  "name": "Aileen and Manik",
-  "version": "1.0",
+  "name": "Aileen-and-Manik",
+  "version": "1.0.0",
   "description": "Aileen and Manik's wedding site",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/manikrathee/aileen-and-manik"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,7 +20,7 @@
     "grunt-contrib-concat": "~0.3.0",
     "grunt-contrib-connect": "^0.8.0",
     "grunt-contrib-cssmin": "~0.6.2",
-    "grunt-contrib-imagemin": "~0.3.0",
+    "grunt-contrib-imagemin": "^0.7.1",
     "grunt-contrib-jshint": "~0.6.3",
     "grunt-contrib-sass": "~0.5.0",
     "grunt-contrib-uglify": "~0.2.2",

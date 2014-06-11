@@ -58,6 +58,19 @@ module.exports = function(grunt) {
         }
       }
     },
+    imagemin: {
+      dynamic: {
+        options: {
+          optimizationLevel: 7,
+          progressive: true,
+        },
+        files: [{
+          expand: true,
+          src: ['/img/**.{png,jpg,gif}'],
+          dest: '/img/',
+        }]
+      }
+    },
     connect: {
       server: {
         options: {
@@ -73,10 +86,11 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.loadNpmTasks('grunt-contrib-connect');
 
   grunt.registerTask('default', ['sass','concat']);
   grunt.registerTask('server', ['sass','concat','connect']);
   grunt.registerTask('w', ['sass','concat','watch']);
-  grunt.registerTask('production', ['sass','concat','cssmin','uglify']);
+  grunt.registerTask('production', ['sass','concat','cssmin','uglify','imagemin']);
 };
