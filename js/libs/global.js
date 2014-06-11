@@ -50,3 +50,10 @@ $('#directions').waypoint(function() {
     return $(this).height();
   }
 });
+
+
+
+if (document.cookie.indexOf('emailSubmitted=') >= 0) {
+    $('#form').removeClass('is-shown');
+    $('#thank-you').addClass('is-shown');
+}

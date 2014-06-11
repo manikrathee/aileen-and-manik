@@ -811,6 +811,7 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
      $('#mce-success-response').hide();
      $('#mce-error-response').hide();
      if (resp.result=="success"){
+         document.cookie = 'emailSubmitted=yes';
          $('#mce-'+resp.result+'-response').show();
          $('#mce-'+resp.result+'-response').html(resp.msg);
          $('#mc-embedded-subscribe-form').each(function(){
@@ -924,3 +925,10 @@ $('#directions').waypoint(function() {
     return $(this).height();
   }
 });
+
+
+
+if (document.cookie.indexOf('emailSubmitted=') >= 0) {
+    $('#form').removeClass('is-shown');
+    $('#thank-you').addClass('is-shown');
+}

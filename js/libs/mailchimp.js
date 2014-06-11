@@ -132,6 +132,7 @@
      $('#mce-success-response').hide();
      $('#mce-error-response').hide();
      if (resp.result=="success"){
+         document.cookie = 'emailSubmitted=yes';
          $('#mce-'+resp.result+'-response').show();
          $('#mce-'+resp.result+'-response').html(resp.msg);
          $('#mc-embedded-subscribe-form').each(function(){

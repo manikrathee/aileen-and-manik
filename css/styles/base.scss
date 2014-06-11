@@ -710,6 +710,21 @@ section[id="registry"] {
 section[id="sign-up"] {
   padding-top: 20px;
   padding-bottom: 10px;
+  article#form, article#thank-you {
+    display: none;
+    &.is-shown {
+      display: block;
+    }
+  }
+  #thank-you {
+    padding: 80px 0 40px 0;
+    text-align: center;
+    h2 {
+      display: block;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  }
 }
 
 section[id="directions"] {

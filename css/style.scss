@@ -4,24 +4,9 @@
 @import "import/1140";
 @import "import/core";
 @import "import/mixins";
-@import "import/media-queries";
-@import "import/ss-symbolicons-block";
+// @import "import/media-queries";
+// @import "import/ss-symbolicons-block";
 @import "import/animation";
-
-// @import "bourbon";
 
 
 @import "styles/base";
-
-
-@media (min-width: 768px){
-	@import "styles/small-screen";
-}
-
-@media (min-width: 960px){
-	@import "styles/medium-screen";
-}
-
-@media (min-width: 1300px){
-	@import "styles/large-screen";
-}
