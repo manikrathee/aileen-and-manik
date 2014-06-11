@@ -19,7 +19,7 @@ module.exports = function(grunt) {
          separator: ';',
        },
        dist: {
-        src: ['js/libs/ss-social.js','js/libs/ss-symbolicons.js','js/libs/mailchimp.js','js/libs/global.js'],
+        src: ['js/libs/ss-social.js','js/libs/ss-symbolicons.js','js/libs/waypoints.js','js/libs/mailchimp.js','js/libs/global.js'],
         dest: 'js/script.js',
         nonull: true,
        },

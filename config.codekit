@@ -964,35 +964,68 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/bg-header.jpg": {
+	"\/img\/bg-header-unoptimized.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 373694,
+		"inputAbbreviatedPath": "\/img\/bg-header-unoptimized.jpg",
+		"outputAbbreviatedPath": "\/img\/bg-header-unoptimized.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/bg-header.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 174298,
 		"inputAbbreviatedPath": "\/img\/bg-header.jpg",
 		"outputAbbreviatedPath": "\/img\/bg-header.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/bg-one.png": {
-		"fileType": 32768,
+	"\/img\/bg-section-accomodations.jpg": {
+		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 75599,
-		"inputAbbreviatedPath": "\/img\/bg-one.png",
-		"outputAbbreviatedPath": "\/img\/bg-one.png",
+		"initialSize": 145556,
+		"inputAbbreviatedPath": "\/img\/bg-section-accomodations.jpg",
+		"outputAbbreviatedPath": "\/img\/bg-section-accomodations.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/bg-two.png": {
-		"fileType": 32768,
+	"\/img\/bg-section-history.jpg": {
+		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 85085,
-		"inputAbbreviatedPath": "\/img\/bg-two.png",
-		"outputAbbreviatedPath": "\/img\/bg-two.png",
+		"initialSize": 91879,
+		"inputAbbreviatedPath": "\/img\/bg-section-history.jpg",
+		"outputAbbreviatedPath": "\/img\/bg-section-history.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/bg-section-proposal.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 91048,
+		"inputAbbreviatedPath": "\/img\/bg-section-proposal.jpg",
+		"outputAbbreviatedPath": "\/img\/bg-section-proposal.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/bg-section-venue.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 76530,
+		"inputAbbreviatedPath": "\/img\/bg-section-venue.jpg",
+		"outputAbbreviatedPath": "\/img\/bg-section-venue.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

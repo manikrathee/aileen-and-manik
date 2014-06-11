@@ -33,3 +33,20 @@ $('#sms input').change(function(e){
   $('#phone').toggleClass('is-shown');
 });
 
+$('.get-directions').click(function(e){
+  var elementOffset = $('#directions').offset().top;
+
+  e.preventDefault();
+
+  $('html, body').animate({
+    scrollTop: elementOffset
+  }, 2000);
+});
+
+$('#directions').waypoint(function() {
+  $('footer').addClass('is-shown');
+}, {
+  offset: function() {
+    return $(this).height();
+  }
+});
