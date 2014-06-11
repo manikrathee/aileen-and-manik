@@ -1,302 +1,4 @@
-/*! Aileen and Manik - www.aileenandmanik.com */var fnames = new Array();var ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='MMERGE3';ftypes[3]='phone';
- try {
-     var jqueryLoaded=jQuery;
-     jqueryLoaded=true;
- } catch(err) {
-     var jqueryLoaded=false;
- }
- var head= document.getElementsByTagName('head')[0];
- if (!jqueryLoaded) {
-     var script = document.createElement('script');
-     script.type = 'text/javascript';
-     script.src = '//ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js';
-     head.appendChild(script);
-     if (script.readyState && script.onload!==null){
-         script.onreadystatechange= function () {
-               if (this.readyState == 'complete') mce_preload_check();
-         }
-     }
- }
-
- var err_style = '';
- try{
-     err_style = mc_custom_error_style;
- } catch(e){
-     err_style = '#mc_embed_signup input.mce_inline_error{border-color:#6B0505;} #mc_embed_signup div.mce_inline_error{margin: 0 0 1em 0; padding: 5px 10px; background-color:#6B0505; font-weight: bold; z-index: 1; color:#fff;}';
- }
- var head= document.getElementsByTagName('head')[0];
- var style= document.createElement('style');
- style.type= 'text/css';
- if (style.styleSheet) {
-   style.styleSheet.cssText = err_style;
- } else {
-   style.appendChild(document.createTextNode(err_style));
- }
- head.appendChild(style);
- setTimeout('mce_preload_check();', 250);
-
- var mce_preload_checks = 0;
- function mce_preload_check(){
-     if (mce_preload_checks>40) return;
-     mce_preload_checks++;
-     try {
-         var jqueryLoaded=jQuery;
-     } catch(err) {
-         setTimeout('mce_preload_check();', 250);
-         return;
-     }
-     var script = document.createElement('script');
-     script.type = 'text/javascript';
-     script.src = 'http://downloads.mailchimp.com/js/jquery.form-n-validate.js';
-     head.appendChild(script);
-     try {
-         var validatorLoaded=jQuery("#fake-form").validate({});
-     } catch(err) {
-         setTimeout('mce_preload_check();', 250);
-         return;
-     }
-     mce_init_form();
- }
- function mce_init_form(){
-     jQuery(document).ready( function($) {
-       var options = { errorClass: 'mce_inline_error', errorElement: 'div', onkeyup: function(){}, onfocusout:function(){}, onblur:function(){}  };
-       var mce_validator = $("#mc-embedded-subscribe-form").validate(options);
-       $("#mc-embedded-subscribe-form").unbind('submit');//remove the validator so we can get into beforeSubmit on the ajaxform, which then calls the validator
-       options = { url: 'http://aileenandmanik.us2.list-manage.com/subscribe/post-json?u=c9b2c969c35a3d185791eba25&id=77c020e7ae&c=?', type: 'GET', dataType: 'json', contentType: "application/json; charset=utf-8",
-                     beforeSubmit: function(){
-                         $('#mce_tmp_error_msg').remove();
-                         $('.datefield','#mc_embed_signup').each(
-                             function(){
-                                 var txt = 'filled';
-                                 var fields = new Array();
-                                 var i = 0;
-                                 $(':text', this).each(
-                                     function(){
-                                         fields[i] = this;
-                                         i++;
-                                     });
-                                 $(':hidden', this).each(
-                                     function(){
-                                         var bday = false;
-                                         if (fields.length == 2){
-                                             bday = true;
-                                             fields[2] = {'value':1970};//trick birthdays into having years
-                                         }
-                                       if ( fields[0].value=='MM' && fields[1].value=='DD' && (fields[2].value=='YYYY' || (bday && fields[2].value==1970) ) ){
-                                         this.value = '';
-                       } else if ( fields[0].value=='' && fields[1].value=='' && (fields[2].value=='' || (bday && fields[2].value==1970) ) ){
-                                         this.value = '';
-                       } else {
-                           if (/\[day\]/.test(fields[0].name)){
-                                               this.value = fields[1].value+'/'+fields[0].value+'/'+fields[2].value;
-                           } else {
-                                               this.value = fields[0].value+'/'+fields[1].value+'/'+fields[2].value;
-                                           }
-                                       }
-                                     });
-                             });
-                         $('.phonefield-us','#mc_embed_signup').each(
-                             function(){
-                                 var fields = new Array();
-                                 var i = 0;
-                                 $(':text', this).each(
-                                     function(){
-                                         fields[i] = this;
-                                         i++;
-                                     });
-                                 $(':hidden', this).each(
-                                     function(){
-                                         if ( fields[0].value.length != 3 || fields[1].value.length!=3 || fields[2].value.length!=4 ){
-                                         this.value = '';
-                       } else {
-                           this.value = 'filled';
-                                       }
-                                     });
-                             });
-                         return mce_validator.form();
-                     },
-                     success: mce_success_cb
-                 };
-       $('#mc-embedded-subscribe-form').ajaxForm(options);
-
-
-     });
- }
- function mce_success_cb(resp){
-     $('#mce-success-response').hide();
-     $('#mce-error-response').hide();
-     if (resp.result=="success"){
-         document.cookie = 'emailSubmitted=yes';
-         $('#mce-'+resp.result+'-response').show();
-         $('#mce-'+resp.result+'-response').html(resp.msg);
-         $('#mc-embedded-subscribe-form').each(function(){
-             this.reset();
-       });
-     } else {
-         var index = -1;
-         var msg;
-         try {
-             var parts = resp.msg.split(' - ',2);
-             if (parts[1]==undefined){
-                 msg = resp.msg;
-             } else {
-                 i = parseInt(parts[0]);
-                 if (i.toString() == parts[0]){
-                     index = parts[0];
-                     msg = parts[1];
-                 } else {
-                     index = -1;
-                     msg = resp.msg;
-                 }
-             }
-         } catch(e){
-             index = -1;
-             msg = resp.msg;
-         }
-         try{
-             if (index== -1){
-                 $('#mce-'+resp.result+'-response').show();
-                 $('#mce-'+resp.result+'-response').html(msg);
-             } else {
-                 err_id = 'mce_tmp_error_msg';
-                 html = '<div id="'+err_id+'" style="'+err_style+'"> '+msg+'</div>';
-
-                 var input_id = '#mc_embed_signup';
-                 var f = $(input_id);
-                 if (ftypes[index]=='address'){
-                     input_id = '#mce-'+fnames[index]+'-addr1';
-                     f = $(input_id).parent().parent().get(0);
-                 } else if (ftypes[index]=='date'){
-                     input_id = '#mce-'+fnames[index]+'-month';
-                     f = $(input_id).parent().parent().get(0);
-                 } else {
-                     input_id = '#mce-'+fnames[index];
-                     f = $().parent(input_id).get(0);
-                 }
-                 if (f){
-                     $(f).append(html);
-                     $(input_id).focus();
-                 } else {
-                     $('#mce-'+resp.result+'-response').show();
-                     $('#mce-'+resp.result+'-response').html(msg);
-                 }
-             }
-         } catch(e){
-             $('#mce-'+resp.result+'-response').show();
-             $('#mce-'+resp.result+'-response').html(msg);
-         }
-     }
- }
-
-;/*  Google Analytics  */
-var googleAnalyticsID = 'UA-19400273-14';
-
-var _gaq = _gaq || [];
-_gaq.push(['_setAccount', googleAnalyticsID]);
-_gaq.push(['_trackPageview']);
-
-(function() {
-  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-  ga.src = ('https:' === document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-})();
-
-
-$('#sms input').change(function(e){
-  $('#phone').toggleClass('is-shown');
-});
-
-$('.get-directions').click(function(e){
-  var elementOffset = $('#directions').offset().top;
-
-  e.preventDefault();
-
-  $('html, body').animate({
-    scrollTop: elementOffset
-  }, 2000);
-});
-
-$('#directions').waypoint(function() {
-  $('footer').addClass('is-shown');
-}, {
-  offset: function() {
-    return $(this).height();
-  }
-});
-
-if (document.cookie.indexOf('emailSubmitted=') >= 0) {
-    $('#form').removeClass('is-shown');
-    $('#thank-you').addClass('is-shown');
-}
-;if (/(MSIE [7-9]\.|Opera.*Version\/(10\.[5-9]|(11|12)\.)|Chrome\/([1-9]|10)\.|Version\/[2-4][\.0-9]+ Safari\/|Version\/(4\.0\.[4-9]|4\.[1-9]|5\.0)[\.0-9]+? Mobile\/.*Safari\/|Android [1-2]\.|BlackBerry.*WebKit)/.test(navigator.userAgent) && !/(IEMobile)/.test(navigator.userAgent)) {
-
-  var ss_set={'stack overflow':'\uF672','github octocat':'\uF671','githuboctocat':'\uF671','stackoverflow':'\uF672','google plus':'\uF613','kickstarter':'\uF681','foursquare':'\uF690','googleplus':'\uF613','instagram':'\uF641','pinterest':'\uF650','posterous':'\uF623','wordpress':'\uF621','thumbs up':'\uD83D\uDC4D','dribbble':'\uF660','facebook':'\uF610','linkedin':'\uF612','thumbsup':'\uD83D\uDC4D','google +':'\uF613','readmill':'\uF652','envelope':'\u2709','twitter':'\uF611','behance':'\uF661','dropbox':'\uF653','youtube':'\uF630','octocat':'\uF671','google+':'\uF613','approve':'\uD83D\uDC4D','spotify':'\uF6B1','last fm':'\uF6B2','blogger':'\uF622','flickr':'\uF640','tumblr':'\uF620','paypal':'\uF680','lastfm':'\uF6B2','github':'\uF670','svpply':'\uF651','email':'\u2709','skype':'\uF6A0','vimeo':'\uF631','mail':'\u2709','rdio':'\uF6B0','like':'\uD83D\uDC4D','rss':'\uE310'};
-
-  if (typeof ss_icons !== 'object' || typeof ss_icons !== 'object') {
-    var ss_icons = ss_set;
-    var ss_keywords = [];
-    for (var i in ss_set) { ss_keywords.push(i); };
-  } else {
-    for (var i in ss_set) { ss_icons[i] = ss_set[i]; ss_keywords.push(i); }
-  };
-
-  if (typeof ss_legacy !== 'function') {
-
-    /* domready.js */
-    !function(a,b){typeof module!="undefined"?module.exports=b():typeof define=="function"&&typeof define.amd=="object"?define(b):this[a]=b()}("ss_ready",function(a){function m(a){l=1;while(a=b.shift())a()}var b=[],c,d=!1,e=document,f=e.documentElement,g=f.doScroll,h="DOMContentLoaded",i="addEventListener",j="onreadystatechange",k="readyState",l=/^loade|c/.test(e[k]);return e[i]&&e[i](h,c=function(){e.removeEventListener(h,c,d),m()},d),g&&e.attachEvent(j,c=function(){/^c/.test(e[k])&&(e.detachEvent(j,c),m())}),a=g?function(c){self!=top?l?c():b.push(c):function(){try{f.doScroll("left")}catch(b){return setTimeout(function(){a(c)},50)}c()}()}:function(a){l?a():b.push(a)}})
-
-    var ss_legacy = function(node) {
-
-      if (!node instanceof Object) return false;
-
-      if (node.length) {
-        for (var i=0; i<node.length; i++) {
-          ss_legacy(node[i]);
-        }
-        return;
-      };
-
-      if (node.value) {
-        node.value = ss_liga(node.value);
-      } else if (node.nodeValue) {
-        node.nodeValue = ss_liga(node.nodeValue);
-      } else if (node.innerHTML) {
-        node.innerHTML = ss_liga(node.innerHTML);
-      }
-
-    };
-
-    var ss_getElementsByClassName = function(node, classname) {
-      if (document.querySelectorAll) {
-        return document.querySelectorAll('.'+classname);
-      }
-      var a = [];
-      var re = new RegExp('(^| )'+classname+'( |$)');
-      var els = node.getElementsByTagName("*");
-      for(var i=0,j=els.length; i<j; i++)
-          if(re.test(els[i].className))a.push(els[i]);
-      return a;
-    };
-
-    var ss_liga = function(that) {
-      var re = new RegExp(ss_keywords.join('|').replace(/[-[\]{}()*+?.,\\^$#\s]/g, "\\$&"),"gi");
-      return that.replace(re, function(v) {
-        return ss_icons[v.toLowerCase()];
-      });
-    };
-
-    ss_ready(function() {
-      if (document.getElementsByClassName) {
-        ss_legacy(document.getElementsByClassName('ss-icon'));
-      } else {
-        ss_legacy(ss_getElementsByClassName(document.body, 'ss-icon'));
-      }
-    });
-
-  }
-
-};
-;if (/(MSIE [7-9]\.|Opera.*Version\/(10\.[5-9]|(11|12)\.)|Chrome\/([1-9]|10)\.|Version\/[2-4][\.0-9]+ Safari\/|Version\/(4\.0\.[4-9]|4\.[1-9]|5\.0)[\.0-9]+? Mobile\/.*Safari\/|Android ([1-2]|4\.[2-9].*Version\/4)\.|BlackBerry.*WebKit)/.test(navigator.userAgent) && !/(IEMobile)/.test(navigator.userAgent)) {
+/*! Aileen and Manik - www.aileenandmanik.com */if (/(MSIE [7-9]\.|Opera.*Version\/(10\.[5-9]|(11|12)\.)|Chrome\/([1-9]|10)\.|Version\/[2-4][\.0-9]+ Safari\/|Version\/(4\.0\.[4-9]|4\.[1-9]|5\.0)[\.0-9]+? Mobile\/.*Safari\/|Android ([1-2]|4\.[2-9].*Version\/4)\.|BlackBerry.*WebKit)/.test(navigator.userAgent) && !/(IEMobile)/.test(navigator.userAgent)) {
 
   if (/Android 4\.[2-9].*Version\/4/.test(navigator.userAgent)) {
     var ss_android = document.createElement('style');
@@ -887,3 +589,233 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
   });
 
 }).call(this);
+;var fnames = new Array();var ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='MMERGE3';ftypes[3]='phone';
+ try {
+     var jqueryLoaded=jQuery;
+     jqueryLoaded=true;
+ } catch(err) {
+     var jqueryLoaded=false;
+ }
+ var head= document.getElementsByTagName('head')[0];
+ if (!jqueryLoaded) {
+     var script = document.createElement('script');
+     script.type = 'text/javascript';
+     script.src = '//ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js';
+     head.appendChild(script);
+     if (script.readyState && script.onload!==null){
+         script.onreadystatechange= function () {
+               if (this.readyState == 'complete') mce_preload_check();
+         }
+     }
+ }
+
+ var err_style = '';
+ try{
+     err_style = mc_custom_error_style;
+ } catch(e){
+     err_style = '#mc_embed_signup input.mce_inline_error{border-color:#6B0505;} #mc_embed_signup div.mce_inline_error{margin: 0 0 1em 0; padding: 5px 10px; background-color:#6B0505; font-weight: bold; z-index: 1; color:#fff;}';
+ }
+ var head= document.getElementsByTagName('head')[0];
+ var style= document.createElement('style');
+ style.type= 'text/css';
+ if (style.styleSheet) {
+   style.styleSheet.cssText = err_style;
+ } else {
+   style.appendChild(document.createTextNode(err_style));
+ }
+ head.appendChild(style);
+ setTimeout('mce_preload_check();', 250);
+
+ var mce_preload_checks = 0;
+ function mce_preload_check(){
+     if (mce_preload_checks>40) return;
+     mce_preload_checks++;
+     try {
+         var jqueryLoaded=jQuery;
+     } catch(err) {
+         setTimeout('mce_preload_check();', 250);
+         return;
+     }
+     var script = document.createElement('script');
+     script.type = 'text/javascript';
+     script.src = 'http://downloads.mailchimp.com/js/jquery.form-n-validate.js';
+     head.appendChild(script);
+     try {
+         var validatorLoaded=jQuery("#fake-form").validate({});
+     } catch(err) {
+         setTimeout('mce_preload_check();', 250);
+         return;
+     }
+     mce_init_form();
+ }
+ function mce_init_form(){
+     jQuery(document).ready( function($) {
+       var options = { errorClass: 'mce_inline_error', errorElement: 'div', onkeyup: function(){}, onfocusout:function(){}, onblur:function(){}  };
+       var mce_validator = $("#mc-embedded-subscribe-form").validate(options);
+       $("#mc-embedded-subscribe-form").unbind('submit');//remove the validator so we can get into beforeSubmit on the ajaxform, which then calls the validator
+       options = { url: 'http://aileenandmanik.us2.list-manage.com/subscribe/post-json?u=c9b2c969c35a3d185791eba25&id=77c020e7ae&c=?', type: 'GET', dataType: 'json', contentType: "application/json; charset=utf-8",
+                     beforeSubmit: function(){
+                         $('#mce_tmp_error_msg').remove();
+                         $('.datefield','#mc_embed_signup').each(
+                             function(){
+                                 var txt = 'filled';
+                                 var fields = new Array();
+                                 var i = 0;
+                                 $(':text', this).each(
+                                     function(){
+                                         fields[i] = this;
+                                         i++;
+                                     });
+                                 $(':hidden', this).each(
+                                     function(){
+                                         var bday = false;
+                                         if (fields.length == 2){
+                                             bday = true;
+                                             fields[2] = {'value':1970};//trick birthdays into having years
+                                         }
+                                       if ( fields[0].value=='MM' && fields[1].value=='DD' && (fields[2].value=='YYYY' || (bday && fields[2].value==1970) ) ){
+                                         this.value = '';
+                       } else if ( fields[0].value=='' && fields[1].value=='' && (fields[2].value=='' || (bday && fields[2].value==1970) ) ){
+                                         this.value = '';
+                       } else {
+                           if (/\[day\]/.test(fields[0].name)){
+                                               this.value = fields[1].value+'/'+fields[0].value+'/'+fields[2].value;
+                           } else {
+                                               this.value = fields[0].value+'/'+fields[1].value+'/'+fields[2].value;
+                                           }
+                                       }
+                                     });
+                             });
+                         $('.phonefield-us','#mc_embed_signup').each(
+                             function(){
+                                 var fields = new Array();
+                                 var i = 0;
+                                 $(':text', this).each(
+                                     function(){
+                                         fields[i] = this;
+                                         i++;
+                                     });
+                                 $(':hidden', this).each(
+                                     function(){
+                                         if ( fields[0].value.length != 3 || fields[1].value.length!=3 || fields[2].value.length!=4 ){
+                                         this.value = '';
+                       } else {
+                           this.value = 'filled';
+                                       }
+                                     });
+                             });
+                         return mce_validator.form();
+                     },
+                     success: mce_success_cb
+                 };
+       $('#mc-embedded-subscribe-form').ajaxForm(options);
+
+
+     });
+ }
+ function mce_success_cb(resp){
+     $('#mce-success-response').hide();
+     $('#mce-error-response').hide();
+     if (resp.result=="success"){
+         document.cookie = 'emailSubmitted=yes';
+         $('#mce-'+resp.result+'-response').show();
+         $('#mce-'+resp.result+'-response').html(resp.msg);
+         $('#mc-embedded-subscribe-form').each(function(){
+             this.reset();
+       });
+     } else {
+         var index = -1;
+         var msg;
+         try {
+             var parts = resp.msg.split(' - ',2);
+             if (parts[1]==undefined){
+                 msg = resp.msg;
+             } else {
+                 i = parseInt(parts[0]);
+                 if (i.toString() == parts[0]){
+                     index = parts[0];
+                     msg = parts[1];
+                 } else {
+                     index = -1;
+                     msg = resp.msg;
+                 }
+             }
+         } catch(e){
+             index = -1;
+             msg = resp.msg;
+         }
+         try{
+             if (index== -1){
+                 $('#mce-'+resp.result+'-response').show();
+                 $('#mce-'+resp.result+'-response').html(msg);
+             } else {
+                 err_id = 'mce_tmp_error_msg';
+                 html = '<div id="'+err_id+'" style="'+err_style+'"> '+msg+'</div>';
+
+                 var input_id = '#mc_embed_signup';
+                 var f = $(input_id);
+                 if (ftypes[index]=='address'){
+                     input_id = '#mce-'+fnames[index]+'-addr1';
+                     f = $(input_id).parent().parent().get(0);
+                 } else if (ftypes[index]=='date'){
+                     input_id = '#mce-'+fnames[index]+'-month';
+                     f = $(input_id).parent().parent().get(0);
+                 } else {
+                     input_id = '#mce-'+fnames[index];
+                     f = $().parent(input_id).get(0);
+                 }
+                 if (f){
+                     $(f).append(html);
+                     $(input_id).focus();
+                 } else {
+                     $('#mce-'+resp.result+'-response').show();
+                     $('#mce-'+resp.result+'-response').html(msg);
+                 }
+             }
+         } catch(e){
+             $('#mce-'+resp.result+'-response').show();
+             $('#mce-'+resp.result+'-response').html(msg);
+         }
+     }
+ }
+
+;/*  Google Analytics  */
+var googleAnalyticsID = 'UA-19400273-14';
+
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', googleAnalyticsID]);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' === document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+
+
+$('#sms input').change(function(e){
+  $('#phone').toggleClass('is-shown');
+});
+
+$('.get-directions').click(function(e){
+  var elementOffset = $('#directions').offset().top;
+
+  e.preventDefault();
+
+  $('html, body').animate({
+    scrollTop: elementOffset
+  }, 2000);
+});
+
+$('#directions').waypoint(function() {
+  $('footer').addClass('is-shown');
+}, {
+  offset: function() {
+    return $(this).height();
+  }
+});
+
+if (document.cookie.indexOf('emailSubmitted=') >= 0) {
+    $('#form').removeClass('is-shown');
+    $('#thank-you').addClass('is-shown');
+}
