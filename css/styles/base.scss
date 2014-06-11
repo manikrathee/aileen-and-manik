@@ -596,14 +596,14 @@ section[id="accomodations"] {
   .hotel-block {
     position: relative;
     background: $off-white;
-    width: 100%;
+    width: 300px;
+    max-width: 100%;
     padding: 20px 0;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     @media (min-width: 768px) {
       background: transparent;
-      width: 300px;
       padding: 40px 0 0 0;
     }
     span {
@@ -745,28 +745,37 @@ section[id="directions"] {
     }
   }
   h2 {
-    width: 30%;
+    width: 100%;
+    @media (min-width: 768px) {
+      width: 30%;
+    }
   }
   form {
-    width: 70%;
+    width: 90%;
+    margin: 0 auto 20px;
+    @media (min-width: 768px) {
+      width: 70%;
+      margin: 0;
+    }
     #map-address {
+      float: left;
+      width: 65%;
       padding: 9px 10px;
       font-size: 1.2em;
       font-family: $proxima;
       @include box;
     }
     #map-subscribe {
+      float: left;
+      width: 25%;
+      margin-left: 5%;
       @include box;
     }
     @media (min-width: 768px) {
       #map-address {
-        float: left;
-        width: 65%;
         margin-top: 8px;
       }
       #map-subscribe {
-        float: left;
-        width: 25%;
         margin: 8px 0 0 5%;
       }
     }

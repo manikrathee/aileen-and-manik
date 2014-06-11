@@ -11,18 +11,32 @@ module.exports = function(grunt) {
       },
     },
     watch: {
-      files: ['/*'],
-      tasks: ['sass','concat'],
+      css: {
+        files: '**/*.scss',
+        tasks: ['sass','concat'],
+        options: {
+          livereload: true,
+        },
+      },
+      scripts: {
+        files: '**/*.js',
+        tasks: ['concat'],
+        options: {
+          livereload: true,
+        },
+      }
     },
     concat: {
-       options: {
-         separator: ';',
-       },
-       dist: {
-        src: ['js/libs/ss-social.js','js/libs/ss-symbolicons.js','js/libs/waypoints.js','js/libs/mailchimp.js','js/libs/global.js'],
+      options: {
+        stripBanners: true,
+        banner: '/*! Aileen and Manik - www.aileenandmanik.com */',
+        separator: ';',
+      },
+      dist: {
+        src: ['js/libs/*','js/libs/global.js'],
         dest: 'js/script.js',
         nonull: true,
-       },
+      },
     },
     cssmin: {
       minify: {
@@ -43,6 +57,14 @@ module.exports = function(grunt) {
           config: '_config.yml'
         }
       }
+    },
+    connect: {
+      server: {
+        options: {
+          port: 9000,
+          keepalive: true
+        }
+      }
     }
   });
 
@@ -51,8 +73,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-connect');
 
   grunt.registerTask('default', ['sass','concat']);
+  grunt.registerTask('server', ['sass','concat','connect']);
   grunt.registerTask('w', ['sass','concat','watch']);
   grunt.registerTask('production', ['sass','concat','cssmin','uglify']);
 };
