@@ -779,22 +779,14 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
      }
  }
 
-;/*  Google Analytics  */
-var googleAnalyticsID = 'UA-19400273-14';
-
-var _gaq = _gaq || [];
-_gaq.push(['_setAccount', googleAnalyticsID]);
-_gaq.push(['_trackPageview']);
-
-(function() {
-  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-  ga.src = ('https:' === document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-})();
-
-
-$('#sms input').change(function(e){
+;$('#sms input').change(function(e){
   $('#phone').toggleClass('is-shown');
+  ga('send', 'event', 'signup-form', 'clicked-sms', 'displayed Phone Number Field');
+});
+
+$('.add-to-calendar').click(function(){
+  ga('send', 'event', 'Main', 'click', 'iCal Event');
+
 });
 
 $('.get-directions').click(function(e){
@@ -805,9 +797,11 @@ $('.get-directions').click(function(e){
   $('html, body').animate({
     scrollTop: elementOffset
   }, 2000);
+  ga('send', 'event', 'Main', 'Click', 'Header Directions Link');
 });
 
 $('#directions').waypoint(function() {
+  ga('send', 'event', 'Main', 'Scrolled', 'Saw Wanderlust');
   $('footer').addClass('is-shown');
 }, {
   offset: function() {
@@ -816,6 +810,7 @@ $('#directions').waypoint(function() {
 });
 
 if (document.cookie.indexOf('emailSubmitted=') >= 0) {
-    $('#form').removeClass('is-shown');
-    $('#thank-you').addClass('is-shown');
+  $('#form').removeClass('is-shown');
+  $('#thank-you').addClass('is-shown');
+  ga('send', 'event', 'Main', 'Return Visit', 'viewed Form Thank You replacement');
 }
