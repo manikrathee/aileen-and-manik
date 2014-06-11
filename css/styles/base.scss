@@ -133,7 +133,6 @@ a {
   }
 }
 
-
 %section-icon {
   display: block;
   background-color: transparent;
@@ -144,8 +143,6 @@ a {
   margin-right: auto;
   @include size(51px, 60px);
 }
-
-
 
 .container {
   position: relative;
@@ -173,7 +170,10 @@ header[id="main-header"] {
   background: url('../img/bg-header.jpg') no-repeat  50% 50% ;
   background-size: cover;
   overflow: hidden;
-  height: 500px;
+  height: 300px;
+  @media (min-width: 768px) {
+    height: 500px;
+  }
   i {
     display: block;
     position: absolute;
@@ -239,6 +239,7 @@ section {
     text-align: center;
     line-height: 1.5;
     @media (min-width: 768px) {
+      font-size: 2.25rem;
       text-align: left;
     }
   }
@@ -345,7 +346,7 @@ section[id="join-us"] {
     a {
       display: block;
       margin: 10px 0;
-      opacity: 0.5;
+      opacity: 0.7;
       font-size: 1rem;
       color: $grey;
       @media (min-width: 768px) {
@@ -536,7 +537,7 @@ section[id="proposal"] {
     background-image: url('../img/icon-proposal.png');
     @media (min-width: 768px) {
       position: absolute;
-      top: 230px;
+      top: 195px;
       left: 50%;
       margin-left: -29px;
     }
@@ -559,6 +560,7 @@ section[id="accomodations"] {
     display: block;
     overflow: hidden;
     width: 250px;
+    max-width: 95%;
     margin: 30px auto 0;
     padding: 14px 0;
     border: 1px solid $grey;
@@ -591,6 +593,7 @@ section[id="accomodations"] {
       text-transform: uppercase;
       font-weight: 300;
       pointer-events: none;
+      @include ellipsis;
     }
   }
   .hotel-block {
@@ -670,6 +673,10 @@ section[id="venue"] {
         font-style: normal;
         text-transform: uppercase;
       }
+      &.ladies-header,
+      &.gentlemen-header {
+        margin-bottom: 0;
+      }
     }
   }
 }
@@ -680,6 +687,7 @@ section[id="registry"] {
   @media (min-width: 768px) {
     background: transparent url('../img/bg-section-registry.jpg') no-repeat 15% 66%;
     background-size: 55%;
+    margin-top: 5px; // fixes bg overlap w/ previous section
   }
   h6 {
     @media (min-width: 768px) {
@@ -763,18 +771,33 @@ section[id="directions"] {
       border: none;
     }
     #map-address {
-      float: left;
-      width: 65%;
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
       padding: 9px 10px;
       font-size: 1.2em;
       font-family: $proxima;
+      outline: none;
+      border: 1px solid lighten($grey, 20%);
       @include box;
+      &:focus {
+        outline: none;
+      }
+      @media (min-width: 768px) {
+        float: left;
+        width: 65%;
+      }
     }
     #map-subscribe {
-      float: left;
-      width: 25%;
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
       margin-left: 5%;
       @include box;
+      @media (min-width: 768px) {
+        float: left;
+        width: 25%;
+      }
     }
     @media (min-width: 768px) {
       #map-address {
@@ -850,6 +873,7 @@ footer {
     font-family: $proxima;
     font-size: 0.8rem;
     font-weight: 100;
+    outline: none;
     @include box;
     &:focus {
       outline: 0;
