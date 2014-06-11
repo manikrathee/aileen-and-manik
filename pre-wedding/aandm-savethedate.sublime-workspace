@@ -1,0 +1,1645 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"brand-",
+				"brand-secondary"
+			],
+			[
+				"ls",
+				"list	list-style-type"
+			],
+			[
+				"brand-alt",
+				"brand-alt-main"
+			],
+			[
+				"20px",
+				"200px"
+			],
+			[
+				"center",
+				"centerAPI"
+			],
+			[
+				"river-item",
+				"river-item-details"
+			],
+			[
+				"lsn",
+				"lis:n	list-style:none"
+			],
+			[
+				"text",
+				"text/javascript"
+			],
+			[
+				"vertical",
+				"vertical-align"
+			],
+			[
+				"fluence",
+				"fluenceapp"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 3111,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "gruntfile.js",
+			"settings":
+			{
+				"buffer_size": 1825,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/styles/base.scss",
+			"settings":
+			{
+				"buffer_size": 2451,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/libs/script.js",
+			"settings":
+			{
+				"buffer_size": 2342,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/style.scss",
+			"settings":
+			{
+				"buffer_size": 408,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/import/animation.scss",
+			"settings":
+			{
+				"buffer_size": 67259,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 375.0,
+		"selected_items":
+		[
+			[
+				"project",
+				"Project: Save As"
+			]
+		],
+		"width": 579.0
+	},
+	"console":
+	{
+		"height": 176.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": true,
+		"side_bar_visible": false,
+		"status_bar_visible": true
+	},
+	"file_history":
+	[
+		"/Users/manikrathee/Dropbox/#Symlink/Aileen-and-Manik/save-the-date/js/libs/fitvid.js",
+		"/Users/manikrathee/Dropbox/#Symlink/Aileen-and-Manik/save-the-date/js/libs/froogaloop.js",
+		"/Users/manikrathee/Dropbox/#Symlink/Aileen-and-Manik/save-the-date/package.json",
+		"/Users/manikrathee/Dropbox/#Symlink/Aileen-and-Manik/save-the-date/css/style.scss",
+		"/Users/manikrathee/Dropbox/#Symlink/Aileen-and-Manik/save-the-date/js/script.js",
+		"/Users/manikrathee/Dropbox/#Symlink/Aileen-and-Manik/save-the-date/css/origstyle.scss",
+		"/Users/manikrathee/Dropbox/#Symlink/Aileen-and-Manik/save-the-date/css/style.less",
+		"/Users/manikrathee/Dropbox/#Symlink/#Continu/app/marketing/routes/index.js",
+		"/Users/manikrathee/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/manikrathee/Dropbox/#Symlink/#Continu/app/marketing/views/careers_full_stack_engineer.hjs",
+		"/Users/manikrathee/Dropbox/#Symlink/#Continu/app/marketing/node_modules/node-sass/libsass/sass-spec/spec/bourbon/lib/addons/_button.scss",
+		"/Users/manikrathee/Dropbox/#Symlink/#Continu/app/marketing/views/privacy_policy.hjs",
+		"/Users/manikrathee/Dropbox/#Symlink/#Continu/app/marketing/Gruntfile.js",
+		"/Users/manikrathee/Dropbox/#Symlink/#Continu/app/marketing/views/careers.hjs",
+		"/Users/manikrathee/Dropbox/#Symlink/#Continu/app/marketing/views/features.hjs",
+		"/Users/manikrathee/Dropbox/#Symlink/#Continu/app/marketing/views/faqs.hjs",
+		"/Users/manikrathee/Dropbox/#Symlink/#Continu/app/marketing/views/partials/nav.hjs",
+		"/Users/manikrathee/Dropbox/#Symlink/#Continu/app/marketing/views/partials/footer.hjs",
+		"/Users/manikrathee/Dropbox/#Symlink/#Continu/app/marketing/views/about.hjs",
+		"/Users/manikrathee/Dropbox/#Symlink/#Continu/app/marketing/views/partials/cta.hjs",
+		"/Users/manikrathee/Dropbox/#Symlink/#Continu/app/marketing/views/why_continu.hjs",
+		"/Users/manikrathee/Dropbox/#Symlink/#Continu/app/marketing/views/index.hjs",
+		"/Users/manikrathee/Dropbox/#Symlink/#Continu/app/marketing/views/tos.hjs",
+		"/Users/manikrathee/Dropbox/#Symlink/#Continu/app/marketing/views/blog.hjs",
+		"/Users/manikrathee/Dropbox/#Symlink/#Continu/app/marketing/public/sass/styles/base.scss",
+		"/Users/manikrathee/Dropbox/#Symlink/#Continu/app/marketing/public/sass/import/animation.scss",
+		"/Users/manikrathee/Dropbox/#Symlink/#Continu/app/marketing/public/sass/styles/small-screen.scss",
+		"/Users/manikrathee/Dropbox/#Symlink/#Continu/app/marketing/views/press.hjs",
+		"/Users/manikrathee/Dropbox/#Symlink/#Continu/app/marketing/public/sass/styles/medium-screen.scss",
+		"/Users/manikrathee/Dropbox/#Symlink/#Continu/app/marketing/public/js/libs/headroom.js",
+		"/Users/manikrathee/Dropbox/#Symlink/#Continu/app/marketing/public/js/script.js",
+		"/Users/manikrathee/Dropbox/#Symlink/#Continu/app/marketing/public/js/libs/mailchimp.js",
+		"/Users/manikrathee/Dropbox/#Symlink/#Continu/app/marketing/views/partials/header.hjs",
+		"/Users/manikrathee/Dropbox/#Symlink/#Continu/app/marketing/public/js/libs/global.js",
+		"/Users/manikrathee/Dropbox/#Symlink/#Continu/app/marketing/continu-marketing.sublime-project",
+		"/Users/manikrathee/Dropbox/#Symlink/#Continu/app/marketing/public/js/script.min.js",
+		"/Users/manikrathee/Dropbox/#Symlink/Consulting/2013/Zach-Stubenvoll/facebook-repo/js/script.js",
+		"/Users/manikrathee/Dropbox/#Symlink/#Continu/app/marketing/public/js/libs/google-analytics.js",
+		"/Users/manikrathee/Dropbox/#Symlink/#Continu/app/marketing/package.json",
+		"/Users/manikrathee/Dropbox/#Symlink/Consulting/2013/Zach-Stubenvoll/zachstubenvoll.github.com/js/main.js",
+		"/Users/manikrathee/Dropbox/#Symlink/#Continu/app/www/index.html",
+		"/Users/manikrathee/Dropbox/#Symlink/#Continu/app/www/js/script.js",
+		"/Users/manikrathee/Dropbox/#Symlink/#Continu/app/marketing/public/sass/import/1140.scss",
+		"/Users/manikrathee/Dropbox/#Symlink/#Continu/app/marketing/public/css/style.scss",
+		"/Users/manikrathee/Dropbox/#Symlink/#Continu/app/marketing/public/css/styles/small-screen.scss",
+		"/Users/manikrathee/Dropbox/#Symlink/#Continu/app/marketing/public/css/styles/medium-screen.scss",
+		"/Users/manikrathee/Dropbox/#Symlink/#Continu/app/marketing/public/css/styles/large-screen.scss",
+		"/Users/manikrathee/Dropbox/#Symlink/#Continu/app/marketing/public/css/styles/base.scss",
+		"/Users/manikrathee/Dropbox/#Symlink/#Continu/app/marketing/public/css/import/animation.scss",
+		"/Users/manikrathee/Dropbox/#Symlink/#Continu/app/marketing/public/js/dev/livereload.js",
+		"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/_prebuild/css/import/ss-social.scss",
+		"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/_prebuild/fonts/ss-standard.svg",
+		"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/_prebuild/css/styles/project-universalshanti.scss",
+		"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/_prebuild/wrapskins.html",
+		"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/_prebuild/universal-shanti.html",
+		"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/_prebuild/resources.html",
+		"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/_prebuild/manik-rathee-photography.html",
+		"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/_prebuild/hope-will-see-us-through.html",
+		"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/_prebuild/blog-old.html",
+		"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/_prebuild/about.html",
+		"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/_prebuild/barack-obama-contribute.html",
+		"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/_prebuild/barack-obama.html",
+		"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/_prebuild/blog.html",
+		"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/_prebuild/css/sequential.scss",
+		"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/_prebuild/barack-obama.php",
+		"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/_site/css/styles/project-obama.scss",
+		"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/_prebuild/css/styles/project-obama-contribute.scss",
+		"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/_prebuild/js/sequential.js",
+		"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/_prebuild/barack-obama-contribute.php",
+		"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/_prebuild/css/styles/home.scss",
+		"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/_prebuild/_layouts/default.html",
+		"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/_prebuild/js/libs/modernizr.min.js",
+		"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/_prebuild/js/libs/jquery.backstretch.js",
+		"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/manikrathee-v5-6.sublime-project",
+		"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/_prebuild/global/footer.php",
+		"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/_prebuild/global/header.html",
+		"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/_prebuild/global/header.php",
+		"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/_prebuild/css/import/flexslider.scss",
+		"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/_prebuild/css/import/modal.scss",
+		"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/_prebuild/css/import/nav.scss",
+		"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/_prebuild/livescribe.php",
+		"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/_prebuild/manik-rathee-photography.php",
+		"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/_prebuild/universal-shanti.php",
+		"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/_prebuild/wrapskins.php",
+		"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/_prebuild/blog-old.php",
+		"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/_prebuild/blog.php",
+		"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/_prebuild/catalyst-iphone-theme.php",
+		"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/_prebuild/is/a/tweeter/data/csv/2013_01.csv",
+		"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/_prebuild/is/a/tweeter/data/js/tweets/2010_12.js",
+		"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/_prebuild/is/a/tweeter/data/js/tweets/2011_01.js",
+		"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/_prebuild/is/a/tweeter/data/js/tweets/2011_02.js",
+		"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/_prebuild/is/a/tweeter/data/js/tweets/2011_03.js",
+		"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/_prebuild/is/a/tweeter/data/js/tweets/2011_04.js",
+		"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/_prebuild/is/a/tweeter/data/js/tweets/2011_05.js",
+		"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/_prebuild/is/a/tweeter/data/js/tweets/2011_06.js",
+		"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/_prebuild/is/a/tweeter/data/js/tweets/2011_07.js",
+		"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/_prebuild/is/a/tweeter/data/js/tweets/2011_08.js",
+		"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/_prebuild/is/a/tweeter/data/js/tweets/2011_09.js",
+		"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/_prebuild/is/a/tweeter/data/js/tweets/2011_10.js",
+		"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/_prebuild/is/a/tweeter/data/js/tweets/2011_12.js",
+		"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/_prebuild/is/a/tweeter/data/js/tweets/2012_01.js",
+		"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/_prebuild/is/a/tweeter/data/js/tweets/2012_02.js",
+		"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/_prebuild/is/a/tweeter/data/js/tweets/2012_03.js",
+		"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/_prebuild/is/a/tweeter/data/js/tweets/2012_04.js",
+		"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/_prebuild/is/a/tweeter/data/js/tweets/2012_05.js",
+		"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/_prebuild/is/a/tweeter/data/js/tweets/2012_06.js",
+		"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/_prebuild/is/a/tweeter/data/js/tweets/2012_07.js",
+		"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/_prebuild/is/a/tweeter/data/js/tweets/2012_08.js",
+		"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/_prebuild/is/a/tweeter/data/js/tweets/2012_09.js",
+		"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/_prebuild/is/a/tweeter/data/js/tweets/2012_10.js",
+		"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/_prebuild/is/a/tweeter/data/js/tweets/2012_11.js",
+		"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/_prebuild/is/a/tweeter/data/js/tweets/2012_12.js",
+		"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/_prebuild/is/a/tweeter/data/js/tweets/2013_01.js",
+		"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/_prebuild/is/a/tweeter/data/js/tweets/2013_02.js",
+		"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/_prebuild/css/style.scss",
+		"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/_prebuild/css/styles/about.scss",
+		"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/_prebuild/css/styles/base.scss",
+		"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/_prebuild/css/styles/project-blog.scss",
+		"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/_prebuild/is/a/tweeter/data/js/tweets/2011_11.js",
+		"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/_prebuild/css/styles/project-catalyst.scss",
+		"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/_prebuild/css/styles/project-hope.scss",
+		"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/_prebuild/css/styles/project-livescribe.scss",
+		"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/_prebuild/css/styles/project-mrphoto.scss",
+		"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/_prebuild/css/styles/project-obama.scss",
+		"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/_prebuild/css/styles/project-wrapskins.scss",
+		"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/_prebuild/css/styles/resources.scss",
+		"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/_prebuild/hope-will-see-us-through.php",
+		"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/_prebuild/is/a/mobile-photographer/css/style.css"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"",
+			"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/_prebuild",
+			"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/",
+			"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/js",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"1s",
+			"getAttir",
+			"player_id",
+			"type=\"text/javascript\" ",
+			"'concat',",
+			"'jekyll',",
+			"root",
+			"/img/",
+			"A simple and beautiful learning platform in the cloud",
+			"Continu",
+			"continu",
+			"Continu",
+			"_site",
+			"button_invert",
+			"img/",
+			"img",
+			"make-a-difference",
+			"<<<<",
+			"href=\"",
+			"*",
+			"        *",
+			"*",
+			"-",
+			"nav",
+			"our-vision",
+			"panel-heading",
+			"social-interior",
+			"press",
+			"ss-social-circle",
+			"class=\"ss-icon ",
+			"title=\"\"",
+			"secondary",
+			"panel_heading",
+			"don't",
+			"735px",
+			"Fluence Team ",
+			"Fluence Team Blog",
+			"statement",
+			"enterprise",
+			"footer",
+			"<span class=\"ss-icon ss-social\">",
+			"<span class=\"ss-icon ss-social\">linkedin</span>",
+			"nav",
+			"nav-blog",
+			",color",
+			"background",
+			".3s",
+			".2s",
+			"s",
+			"both",
+			"1s ease;",
+			".scrolle",
+			"bounceout",
+			"nav",
+			"slideout",
+			"nav",
+			"hero_",
+			"url",
+			"learning",
+			"20",
+			"link",
+			"info@",
+			"link",
+			"2",
+			"header, ul",
+			"<li>",
+			"itemprop=\"url\">",
+			"<p class=\"answer-heading\">",
+			"<li>",
+			"<p class=\"answer-heading\">",
+			"## ",
+			"Front-End Engineer",
+			"vertical",
+			"sixcol last",
+			"panel_heading",
+			"careers",
+			"why",
+			"linkedin",
+			"LinkedIn",
+			"log",
+			"loading",
+			"this",
+			"ADDURL",
+			"social",
+			"ss-icon",
+			"cta",
+			"(r)",
+			"[",
+			"[info@continu.co]",
+			"[",
+			"class=\"ss-icon ss-social\"",
+			"divider",
+			"request-a-trial",
+			"request a demo",
+			"cta",
+			"User Experience",
+			"nav-request-trial",
+			"request",
+			"nav",
+			"strong",
+			"simple",
+			"integrations",
+			"panel_extra_pad",
+			"**",
+			"***************************************************************",
+			"**************************************************************",
+			"*************************************************************",
+			"************************************************************",
+			"***********************************************************",
+			"**********************************************************",
+			"*********************************************************",
+			"********************************************************",
+			"*******************************************************",
+			"******************************************************",
+			"*****************************************************",
+			"****************************************************",
+			"***************************************************",
+			"**************************************************",
+			"*************************************************",
+			"************************************************",
+			"***********************************************",
+			"**********************************************",
+			"*********************************************",
+			"********************************************",
+			"*******************************************",
+			"******************************************",
+			"*****************************************",
+			"****************************************"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"img/",
+			" {",
+			"",
+			"background: #1297c9;\nbackground-image: linear-gradient(bottom, rgba(0,0,0,0.1) 0%, rgba(255,255,255,0.1) 100%);\nbackground-image: -o-linear-gradient(bottom, rgba(0,0,0,0.1) 0%, rgba(255,255,255,0.1) 100%);\nbackground-image: -moz-linear-gradient(bottom, rgba(0,0,0,0.1) 0%, rgba(255,255,255,0.1) 100%);\nbackground-image: -webkit-linear-gradient(bottom, rgba(0,0,0,0.1) 0%, rgba(255,255,255,0.1) 100%);\nbackground-image: -ms-linear-gradient(bottom, rgba(0,0,0,0.1) 0%, rgba(255,255,255,0.1) 100%);\nbackground-image: -webkit-gradient(\nlinear,\nleft bottom,\nleft top,\ncolor-stop(0, rgba(0,0,0,0.1)),\ncolor-stop(1, rgba(255,255,255,0.1))\n);",
+			"\"jubilat\",serif;",
+			"",
+			"<a href=\"\" title=\"\">",
+			"font-size: 12px;",
+			".loader-element",
+			"",
+			"sans",
+			"serif",
+			"\"active\"",
+			"0.15",
+			"0,0,0,0.15",
+			"0,0,0,0.35",
+			"255,255,255,0.35",
+			"(255,255,255,0.35) ",
+			"rgba(0,0,0,0.35)",
+			"<p class=\"button\" title=\"Learn More\">Learn More</p>",
+			"translateY(0px);",
+			"translateY(-100px);",
+			"3s ease-in-out"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"settings":
+					{
+						"buffer_size": 3111,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2129,
+								2129
+							]
+						],
+						"settings":
+						{
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2.0,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5.0,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10.0,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"sublime_auto_complete": true,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 787.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 1,
+					"file": "gruntfile.js",
+					"settings":
+					{
+						"buffer_size": 1825,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								587,
+								587
+							]
+						],
+						"settings":
+						{
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2.0,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5.0,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10.0,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"sublime_auto_complete": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 145.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "css/styles/base.scss",
+					"settings":
+					{
+						"buffer_size": 2451,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2425,
+								2425
+							]
+						],
+						"settings":
+						{
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2.0,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5.0,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10.0,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"sublime_auto_complete": true,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2298.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "js/libs/script.js",
+					"settings":
+					{
+						"buffer_size": 2342,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1375,
+								1375
+							]
+						],
+						"settings":
+						{
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2.0,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5.0,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10.0,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"sublime_auto_complete": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 289.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "css/style.scss",
+					"settings":
+					{
+						"buffer_size": 408,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "css/import/animation.scss",
+					"settings":
+					{
+						"buffer_size": 67259,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2239,
+								2249
+							]
+						],
+						"settings":
+						{
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2.0,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5.0,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10.0,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"sublime_auto_complete": true,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1185.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 38.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 72.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"anim",
+				"css/import/animation.scss"
+			],
+			[
+				"style",
+				"css/style.scss"
+			],
+			[
+				"script",
+				"js/script.js"
+			],
+			[
+				"base",
+				"css/styles/base.scss"
+			],
+			[
+				"package",
+				"package.json"
+			],
+			[
+				"nav",
+				"views/partials/nav.hjs"
+			],
+			[
+				"full",
+				"views/full_stack_engineer.hjs"
+			],
+			[
+				"routes/in",
+				"routes/index.js"
+			],
+			[
+				"footer",
+				"views/partials/footer.hjs"
+			],
+			[
+				"button",
+				"node_modules/node-sass/libsass/sass-spec/spec/bourbon/lib/addons/_button.scss"
+			],
+			[
+				"press",
+				"views/press.hjs"
+			],
+			[
+				"priv",
+				"views/privacy_policy.hjs"
+			],
+			[
+				"grunt",
+				"Gruntfile.js"
+			],
+			[
+				"careers",
+				"views/careers.hjs"
+			],
+			[
+				"about",
+				"views/about.hjs"
+			],
+			[
+				"why",
+				"views/why_continu.hjs"
+			],
+			[
+				"inde",
+				"views/index.hjs"
+			],
+			[
+				"tos",
+				"views/tos.hjs"
+			],
+			[
+				"index",
+				"views/index.hjs"
+			],
+			[
+				"animation",
+				"public/sass/import/animation.scss"
+			],
+			[
+				"feat",
+				"views/features.hjs"
+			],
+			[
+				"faq",
+				"views/faqs.hjs"
+			],
+			[
+				"care",
+				"views/careers.hjs"
+			],
+			[
+				"features",
+				"views/features.hjs"
+			],
+			[
+				"foo",
+				"views/partials/footer.hjs"
+			],
+			[
+				"cta",
+				"views/partials/cta.hjs"
+			],
+			[
+				"to",
+				"views/tos.hjs"
+			],
+			[
+				"small",
+				"public/sass/styles/small-screen.scss"
+			],
+			[
+				"privac",
+				"views/privacy_policy.hjs"
+			],
+			[
+				"11",
+				"public/sass/import/1140.scss"
+			],
+			[
+				"caree",
+				"views/careers.hjs"
+			],
+			[
+				"route",
+				"routes/index.js"
+			],
+			[
+				"routes/",
+				"routes/index.js"
+			],
+			[
+				"priva",
+				"views/privacy_policy.hjs"
+			],
+			[
+				"featr",
+				"views/features.hjs"
+			],
+			[
+				"routes",
+				"routes/index.js"
+			],
+			[
+				"animat",
+				"public/sass/import/animation.scss"
+			],
+			[
+				"anima",
+				"public/sass/import/animation.scss"
+			],
+			[
+				"head",
+				"public/js/libs/headroom.js"
+			],
+			[
+				"glob",
+				"public/js/libs/global.js"
+			],
+			[
+				"globa",
+				"public/js/libs/global.js"
+			],
+			[
+				"lar",
+				"public/sass/styles/large-screen.scss"
+			],
+			[
+				"114",
+				"public/sass/import/1140.scss"
+			],
+			[
+				"header",
+				"views/partials/header.hjs"
+			],
+			[
+				"twitter-auth",
+				"_prebuild/OAuth/twitter-auth.php"
+			],
+			[
+				".twitter",
+				"_prebuild/js/libs/jquery.api.twitter.js"
+			],
+			[
+				"lastfm",
+				"_prebuild/js/libs/jquery.api.last.fm.js"
+			],
+			[
+				"import/ss-",
+				"_prebuild/css/import/ss-social.scss"
+			],
+			[
+				"ss-st",
+				"_prebuild/fonts/ss-standard.svg"
+			],
+			[
+				"sequen",
+				"_prebuild/css/sequential.scss"
+			],
+			[
+				"sequent",
+				"_prebuild/css/sequential.scss"
+			],
+			[
+				"sequenti",
+				"_prebuild/js/sequential.js"
+			],
+			[
+				"project-",
+				"_site/css/styles/project-obama.scss"
+			],
+			[
+				"barack",
+				"_prebuild/barack-obama.php"
+			],
+			[
+				"home",
+				"_prebuild/css/styles/home.scss"
+			],
+			[
+				"modern",
+				"_prebuild/js/libs/modernizr.min.js"
+			],
+			[
+				"global-nav",
+				"_prebuild/_includes/global-nav-bar.html"
+			],
+			[
+				"backst",
+				"_prebuild/js/libs/jquery.backstretch.js"
+			],
+			[
+				"nav.s",
+				"#HTDOCS/_prebuild/css/import/nav.scss"
+			],
+			[
+				"global-f",
+				"#HTDOCS/_prebuild/_includes/global-footer.html"
+			],
+			[
+				"style.s",
+				"#HTDOCS/_prebuild/css/style.scss"
+			],
+			[
+				"global-",
+				"#HTDOCS/_prebuild/_includes/global-header.html"
+			],
+			[
+				"seq",
+				"#HTDOCS/css/sequential.scss"
+			],
+			[
+				"home.l",
+				"#archive/v5.1-responsive-non-mobile-first/css/home.less"
+			],
+			[
+				"api",
+				"#HTDOCS/css/import/api.scss"
+			],
+			[
+				"stys",
+				"#HTDOCS/css/style.scss"
+			],
+			[
+				"homes",
+				"#HTDOCS/css/home.scss"
+			],
+			[
+				"mixin",
+				"#HTDOCS/css/import/mixins.scss"
+			],
+			[
+				"apis",
+				"#HTDOCS/css/import/api.scss"
+			],
+			[
+				"instagram",
+				"#HTDOCS/js/libs/jquery.api.instagram.js"
+			],
+			[
+				"api.last",
+				"Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/js/libs/jquery.api.last.fm.js"
+			],
+			[
+				"tm",
+				"#HTDOCS/OAuth/tmhOAuth.php"
+			],
+			[
+				"twitter",
+				"#HTDOCS/js/libs/jquery.api.twitter.js"
+			],
+			[
+				"last",
+				"#HTDOCS/js/libs/jquery.api.last.fm.js"
+			],
+			[
+				"rdio",
+				"#HTDOCS/js/libs/jquery.api.rdio.js"
+			],
+			[
+				"scr",
+				"#HTDOCS/js/scripts.js"
+			],
+			[
+				"count",
+				"#HTDOCS/js/libs/jquery.counter.js"
+			],
+			[
+				"manik",
+				"#HTDOCS/manik-rathee-photography.php"
+			],
+			[
+				"sequ",
+				"#HTDOCS/css/sequential.css"
+			],
+			[
+				"instagra",
+				"#HTDOCS/js/libs/jquery.api.instagram.js"
+			],
+			[
+				"livescr",
+				"#HTDOCS/livescribe.php"
+			],
+			[
+				"cataly",
+				"#HTDOCS/#archive/v5.1-responsive-non-mobile-first/interior_catalyst.php"
+			],
+			[
+				"setting",
+				"fluenceapp/settings.py"
+			],
+			[
+				"submit",
+				"fluenceapp/static/js/libs/submit.js"
+			],
+			[
+				"color",
+				"fluenceapp/static/css/import/color.scss"
+			],
+			[
+				"submi",
+				"website/templates/submission.html"
+			],
+			[
+				"settings",
+				"settings.py"
+			],
+			[
+				"small-",
+				"static/css/styles/small-screen.scss"
+			],
+			[
+				"1140",
+				"css/import/1140.less"
+			],
+			[
+				"ty",
+				"css/import/typography.less"
+			],
+			[
+				"core",
+				"css/import/core.less"
+			],
+			[
+				"instag",
+				"#HTDOCS/js/libs/jquery.api.instagram.js"
+			],
+			[
+				"nav.",
+				"#HTDOCS/css/import/nav.less"
+			],
+			[
+				"bann",
+				"includes/banner.php"
+			],
+			[
+				"banner",
+				"includes/banner.php"
+			],
+			[
+				"home.les",
+				"css/home.less"
+			],
+			[
+				"animate",
+				"css/import/animation.less"
+			],
+			[
+				"base-",
+				"website/templates/base-loggedin.html"
+			],
+			[
+				"scripts",
+				"static/js/script.js"
+			],
+			[
+				"river",
+				"static/js/libs/river.js"
+			],
+			[
+				"colo",
+				"static/css/import/color.scss"
+			],
+			[
+				"coor",
+				"static/css/import/color.scss"
+			],
+			[
+				"campaign",
+				"website/templates/campaign.html"
+			],
+			[
+				"color-mix",
+				"static/css/import/color-mixin.scss"
+			],
+			[
+				"valida",
+				"static/js/libs/validation.js"
+			],
+			[
+				"color-m",
+				"static/css/import/color-mixin.scss"
+			],
+			[
+				"artists",
+				"website/templates/artists.html"
+			],
+			[
+				"profile",
+				"website/templates/profile.html"
+			],
+			[
+				"onboard",
+				"website/templates/onboard.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/Users/manikrathee/Dropbox/#Symlink/#Fluence/Projects/FluenceAlpha.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 215.0,
+	"status_bar_visible": true
+}

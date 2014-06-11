@@ -1,0 +1,114 @@
+/* Base Styles */
+
+/* Variables */
+  // Color
+  $white: rgba(255,255,255,1); /* #ffffff */
+  $off-white: rgba(243,243,243,1); /* #f3f3f3 */
+  $black: rgba(21,19,20,1); /* #151314 */
+  $grey: rgba(136,136,136,1); /* #888888 */
+
+  // Base Type
+  $georgia: Georgia, Cambria, "Times New Roman", Times, serif;
+  $helvetica: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  $lucida-grande: "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;
+  $monospace: "Bitstream Vera Sans Mono", Consolas, Courier, monospace;
+  // TypeKit
+  $sans-serif:  "proxima-nova", helvetica, tahoma, verdana, sans-serif;
+
+
+  // Elements
+  $divider: 1px solid rgba(229,229,229,1); /* #E5E5E5 */
+
+  // Symbolset
+  .ss-icon {
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    text-rendering: optimizeLegibility;
+    white-space: nowrap;
+    -webkit-font-smoothing: antialiased;
+    vertical-align: middle;
+  }
+
+
+// Highlights
+::-moz-selection{ background: #333; color:#fff; text-shadow: none; }
+::selection { background:#333; color:#fff; text-shadow: none; }
+a:link { -webkit-tap-highlight-color: none; }
+
+
+// Global Elements
+html, body {
+}
+body {
+  -webkit-backface-visibility: hidden;
+  text-rendering: optimizelegibility;
+  font-family: $sans-serif;
+  background: transparent url('../img/bg-4.jpg') 50% 50% no-repeat;
+}
+a {
+  text-decoration: none;
+  @include transition(color 0.25s linear);
+  &:hover {
+  }
+}
+dl, menu, ol, ul {
+    margin: 0;
+    padding: 0;
+}
+.shading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.65);
+}
+
+.logo{
+  position: relative;
+  z-index: 10;
+  background: url('../img/logo@2x.png') no-repeat 50% 50%;
+  background-size: 100%;
+  margin: 10px auto 0 auto;
+  @include size(300px, 153px);
+  @include ir;
+  @include animate;
+  @include fadeInDown;
+  @include delay;
+}
+
+.video {
+  position: relative;
+  z-index: 10;
+  width: 90%;
+  max-width: 1000px;
+  margin: 70px auto;
+}
+
+#vid-container {
+  display: none;
+  @include animate;
+  &.is-shown {
+    display: block;
+    @include fadeInUp;
+  }
+}
+
+#play {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  @include size(150px, 130px);
+  @include animate;
+  @include fadeInDown;
+  @include delay-long;
+  @include transition(margin 0.25s ease-in-out);
+  &.is-hidden {
+    margin-top: -100px;
+    @include animate-fast;
+    @include delay-none;
+    @include fadeOutUp;
+  }
+}
