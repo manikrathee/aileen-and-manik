@@ -40,3 +40,7 @@ if (document.cookie.indexOf('emailSubmitted=') >= 0) {
   $('#thank-you').addClass('is-shown');
   ga('send', 'event', 'Main', 'Return Visit', 'viewed Form Thank You replacement');
 }
+
+if ($(window).width() > 768) {
+  $('#mapbox').attr('height','500');
+}

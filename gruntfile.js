@@ -92,5 +92,6 @@ module.exports = function(grunt) {
   grunt.registerTask('default', ['sass','concat']);
   grunt.registerTask('server', ['sass','concat','connect']);
   grunt.registerTask('w', ['sass','concat','watch']);
-  grunt.registerTask('production', ['sass','concat','cssmin','uglify','imagemin']);
+  grunt.registerTask('production', ['sass','concat','cssmin','uglify']);
+  // grunt.registerTask('production', ['sass','concat','cssmin','uglify','imagemin']);
 };
