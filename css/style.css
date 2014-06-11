@@ -4967,7 +4967,7 @@ body {
     body {
       background-image: url("../img/footer-bg.png");
       background-repeat: no-repeat;
-      background-position: 46% 123%;
+      background-position: 46% 116%;
       background-size: 2400px auto; } }
 
 h1, h2, h3, h4, h5, h6, p, a {
@@ -5028,7 +5028,10 @@ section[id="history"] > span, section[id="proposal"] span, section[id="accomodat
   border-radius: 0; }
 
 .container {
+  position: relative;
+  z-index: 2;
   background: white;
+  margin-bottom: 100px;
   padding: 0;
   border-left: 1px solid #e2e2e2;
   border-right: 1px solid #e2e2e2; }
@@ -5039,14 +5042,17 @@ section[id="history"] > span, section[id="proposal"] span, section[id="accomodat
     margin: 0 auto;
     padding-left: 0;
     padding-right: 0; }
+  .container.final {
+    padding: 0;
+    margin-bottom: 0; }
 
-header {
+header[id="main-header"] {
   position: relative;
   background: url("../img/bg-header.jpg") no-repeat 50% 50%;
   background-size: cover;
   overflow: hidden;
   height: 500px; }
-  header h1 {
+  header[id="main-header"] h1 {
     position: absolute;
     top: 40px;
     left: 50%;
@@ -5064,6 +5070,24 @@ header {
     width: 130px;
     height: 62px;
     border-radius: 0; }
+
+.container section {
+  width: 140%;
+  margin-left: -20%;
+  -webkit-transform: rotate(8deg);
+  -moz-transform: rotate(8deg);
+  -ms-transform: rotate(8deg);
+  -o-transform: rotate(8deg);
+  transform: rotate(8deg); }
+  .container section > article {
+    width: 71.4285714%;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-transform: rotate(-8deg);
+    -moz-transform: rotate(-8deg);
+    -ms-transform: rotate(-8deg);
+    -o-transform: rotate(-8deg);
+    transform: rotate(-8deg); }
 
 section {
   position: relative;
@@ -5142,13 +5166,6 @@ section {
     @media (min-width: 768px) {
       section blockquote br {
         display: block; } }
-
-.container {
-  position: relative;
-  z-index: 2;
-  margin-bottom: 100px; }
-  .container.final {
-    margin-bottom: 0; }
 
 section[id="join-us"] {
   text-align: center; }
@@ -5302,123 +5319,135 @@ section[id="join-us"] {
             color: #ffadad;
             text-align: center; } }
 
-section[id="history"] > span {
-  background-image: url("../img/icon-history.png"); }
-  @media (min-width: 768px) {
-    section[id="history"] > span {
-      position: absolute;
-      top: 200px;
-      left: 50%;
-      margin-left: -25px; } }
-section[id="history"] .wrapper {
-  overflow: hidden; }
-section[id="history"] h2 {
-  margin-bottom: 40px;
-  font-style: normal; }
-  section[id="history"] h2 i {
+section[id="history"] {
+  background: transparent url("../img/bg-section-history.jpg") no-repeat -18% 57%;
+  background-size: 55%; }
+  section[id="history"] > span {
+    background-image: url("../img/icon-history.png"); }
+    @media (min-width: 768px) {
+      section[id="history"] > span {
+        position: absolute;
+        top: 200px;
+        left: 50%;
+        margin-left: -25px; } }
+  section[id="history"] .wrapper {
+    overflow: hidden; }
+  section[id="history"] h2 {
+    margin-bottom: 40px;
+    font-style: normal; }
+    section[id="history"] h2 i {
+      font-style: italic; }
+    @media (min-width: 768px) {
+      section[id="history"] h2 {
+        text-align: center; } }
+
+section[id="proposal"] {
+  background: transparent url("../img/bg-section-proposal.jpg") no-repeat 109% 38%;
+  background-size: 55%; }
+  section[id="proposal"] h2 {
+    margin-bottom: 40px;
+    font-style: italic;
+    text-align: center; }
+  section[id="proposal"] span {
+    background-image: url("../img/icon-proposal.png"); }
+    @media (min-width: 768px) {
+      section[id="proposal"] span {
+        position: absolute;
+        top: 230px;
+        left: 50%;
+        margin-left: -25px; } }
+
+section[id="accomodations"] {
+  background: transparent url("../img/bg-section-accomodations.jpg") no-repeat -29% 70%;
+  background-size: 50%; }
+  section[id="accomodations"] .alt-hotel {
+    color: #ffadad; }
+    section[id="accomodations"] .alt-hotel:hover {
+      color: #ff7a7a; }
+  section[id="accomodations"] .accomodations-button {
+    display: block;
+    overflow: hidden;
+    width: 250px;
+    margin: 30px auto 0;
+    padding: 14px 0;
+    border: 1px solid #8c8c8c;
+    display: block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: color 0.25s ease-in-out, border 0.25s ease-in-out;
+    -moz-transition: color 0.25s ease-in-out, border 0.25s ease-in-out;
+    -ms-transition: color 0.25s ease-in-out, border 0.25s ease-in-out;
+    -o-transition: color 0.25s ease-in-out, border 0.25s ease-in-out;
+    transition: color 0.25s ease-in-out, border 0.25s ease-in-out; }
+    @media (min-width: 768px) {
+      section[id="accomodations"] .accomodations-button {
+        margin: 30px 0 0 15px; }
+        section[id="accomodations"] .accomodations-button:hover {
+          color: #ffadad;
+          border-color: #ffadad; } }
+    section[id="accomodations"] .accomodations-button .ss-icon {
+      display: block;
+      float: left;
+      width: 20%;
+      height: 20px;
+      padding-top: 3px;
+      font-size: 1.2rem;
+      text-align: center;
+      pointer-events: none; }
+    section[id="accomodations"] .accomodations-button address, section[id="accomodations"] .accomodations-button .telephone {
+      display: block;
+      float: left;
+      width: 80%;
+      font-family: "proxima-nova", helvetica, tahoma, verdana, sans-serif;
+      font-size: 0.8em;
+      font-style: normal;
+      text-transform: uppercase;
+      font-weight: 300;
+      pointer-events: none; }
+  section[id="accomodations"] .hotel-block {
+    position: relative;
+    background: #f8f7f7;
+    width: 100%;
+    padding: 20px 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; }
+    @media (min-width: 768px) {
+      section[id="accomodations"] .hotel-block {
+        background: transparent;
+        width: 300px;
+        padding: 0; } }
+    section[id="accomodations"] .hotel-block span {
+      background-image: url("../img/icon-accomodations.png"); }
+    section[id="accomodations"] .hotel-block .name {
+      opacity: 0.7;
+      margin-top: 40px;
+      margin-bottom: 30px;
+      font-size: 1.2rem;
+      font-style: italic; }
+    section[id="accomodations"] .hotel-block .details {
+      opacity: 0.7;
+      font-family: "proxima-nova", helvetica, tahoma, verdana, sans-serif;
+      font-size: 0.75rem;
+      font-weight: 500;
+      text-transform: uppercase; }
+      section[id="accomodations"] .hotel-block .details + p {
+        margin: 0 auto 40px; }
+
+section[id="venue"] {
+  background: transparent url("../img/bg-section-venue.jpg") no-repeat 102% 47%;
+  background-size: 55%; }
+  section[id="venue"] .right span {
+    background-image: url("../img/icon-venue.png"); }
+  section[id="venue"] .right p {
+    opacity: 0.65;
     font-style: italic; }
-  @media (min-width: 768px) {
-    section[id="history"] h2 {
-      text-align: center; } }
-
-section[id="proposal"] h2 {
-  margin-bottom: 40px;
-  font-style: italic;
-  text-align: center; }
-section[id="proposal"] span {
-  background-image: url("../img/icon-proposal.png"); }
-  @media (min-width: 768px) {
-    section[id="proposal"] span {
-      position: absolute;
-      top: 230px;
-      left: 50%;
-      margin-left: -25px; } }
-
-section[id="accomodations"] .alt-hotel {
-  color: #ffadad; }
-  section[id="accomodations"] .alt-hotel:hover {
-    color: #ff7a7a; }
-section[id="accomodations"] .accomodations-button {
-  display: block;
-  overflow: hidden;
-  width: 250px;
-  margin: 30px auto 0;
-  padding: 14px 0;
-  border: 1px solid #8c8c8c;
-  display: block;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-transition: color 0.25s ease-in-out, border 0.25s ease-in-out;
-  -moz-transition: color 0.25s ease-in-out, border 0.25s ease-in-out;
-  -ms-transition: color 0.25s ease-in-out, border 0.25s ease-in-out;
-  -o-transition: color 0.25s ease-in-out, border 0.25s ease-in-out;
-  transition: color 0.25s ease-in-out, border 0.25s ease-in-out; }
-  @media (min-width: 768px) {
-    section[id="accomodations"] .accomodations-button {
-      margin: 30px 0 0 15px; }
-      section[id="accomodations"] .accomodations-button:hover {
-        color: #ffadad;
-        border-color: #ffadad; } }
-  section[id="accomodations"] .accomodations-button .ss-icon {
-    display: block;
-    float: left;
-    width: 20%;
-    height: 20px;
-    padding-top: 3px;
-    font-size: 1.2rem;
-    text-align: center;
-    pointer-events: none; }
-  section[id="accomodations"] .accomodations-button address, section[id="accomodations"] .accomodations-button .telephone {
-    display: block;
-    float: left;
-    width: 80%;
-    font-family: "proxima-nova", helvetica, tahoma, verdana, sans-serif;
-    font-size: 0.8em;
-    font-style: normal;
-    text-transform: uppercase;
-    font-weight: 300;
-    pointer-events: none; }
-section[id="accomodations"] .hotel-block {
-  position: relative;
-  background: #f8f7f7;
-  width: 100%;
-  padding: 20px 0;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center; }
-  @media (min-width: 768px) {
-    section[id="accomodations"] .hotel-block {
-      background: transparent;
-      width: 300px;
-      padding: 0; } }
-  section[id="accomodations"] .hotel-block span {
-    background-image: url("../img/icon-accomodations.png"); }
-  section[id="accomodations"] .hotel-block .name {
-    opacity: 0.7;
-    margin-top: 40px;
-    margin-bottom: 30px;
-    font-size: 1.2rem;
-    font-style: italic; }
-  section[id="accomodations"] .hotel-block .details {
-    opacity: 0.7;
-    font-family: "proxima-nova", helvetica, tahoma, verdana, sans-serif;
-    font-size: 0.75rem;
-    font-weight: 500;
-    text-transform: uppercase; }
-    section[id="accomodations"] .hotel-block .details + p {
-      margin: 0 auto 40px; }
-
-section[id="venue"] .right span {
-  background-image: url("../img/icon-venue.png"); }
-section[id="venue"] .right p {
-  opacity: 0.65;
-  font-style: italic; }
-  section[id="venue"] .right p strong {
-    display: block;
-    font-family: "proxima-nova", helvetica, tahoma, verdana, sans-serif;
-    font-style: normal;
-    text-transform: uppercase; }
+    section[id="venue"] .right p strong {
+      display: block;
+      font-family: "proxima-nova", helvetica, tahoma, verdana, sans-serif;
+      font-style: normal;
+      text-transform: uppercase; }
 
 @media (min-width: 768px) {
   section[id="registry"] h6 {
@@ -5436,6 +5465,47 @@ section[id="registry"] span {
 section[id="sign-up"] {
   padding-top: 20px;
   padding-bottom: 10px; }
+
+section[id="directions"] {
+  padding-top: 40px;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0; }
+  section[id="directions"] header {
+    overflow: hidden; }
+    @media (min-width: 768px) {
+      section[id="directions"] header {
+        padding: 0 40px 30px;
+        border-bottom: 1px solid #e5e5e5; } }
+  @media (min-width: 768px) {
+    section[id="directions"] h2, section[id="directions"] form {
+      float: left; } }
+  section[id="directions"] h2 {
+    width: 30%; }
+  section[id="directions"] form {
+    width: 70%; }
+    section[id="directions"] form #map-address {
+      padding: 9px 10px;
+      font-size: 1.2em;
+      font-family: "proxima-nova", helvetica, tahoma, verdana, sans-serif;
+      display: block;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box; }
+    section[id="directions"] form #map-subscribe {
+      display: block;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box; }
+    @media (min-width: 768px) {
+      section[id="directions"] form #map-address {
+        float: left;
+        width: 70%;
+        margin-top: 8px; }
+      section[id="directions"] form #map-subscribe {
+        float: left;
+        width: 20%;
+        margin: 8px 0 0 5%; } }
 
 footer {
   position: fixed;

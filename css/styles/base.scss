@@ -88,7 +88,7 @@ body {
   @media (min-width: 1240px) {
     background-image: url('../img/footer-bg.png');
     background-repeat: no-repeat;
-    background-position: 46% 123%;
+    background-position: 46% 116%;
     background-size: 2400px auto;
   }
 }
@@ -148,7 +148,10 @@ a {
 
 
 .container {
+  position: relative;
+  z-index: 2;
   background: $white;
+  margin-bottom: 100px;
   padding: 0;
   border-left: 1px solid #e2e2e2;
   border-right: 1px solid #e2e2e2;
@@ -160,35 +163,17 @@ a {
     padding-left: 0;
     padding-right: 0;
   }
+  &.final {
+    padding: 0;
+    margin-bottom: 0;
+  }
 }
-header {
+header[id="main-header"] {
   position: relative;
   background: url('../img/bg-header.jpg') no-repeat  50% 50% ;
   background-size: cover;
   overflow: hidden;
   height: 500px;
-  // iframe {
-  //   position: relative;
-  //   top: -150px;
-  //   left: -15%;
-  //   z-index: 1;
-  //   width: 140%;
-  //   height: 710px;
-  // }
-  // span {
-  //   position: absolute;
-  //   top: 0;
-  //   bottom: 0;
-  //   left: 0;
-  //   z-index: 10;
-  //   width: 100%;
-  //   background: rgba(0,0,0,0.45);
-  // }
-  // nav {
-  //   position: absolute;
-  //   left: 0;
-  //   z-index: 20;
-  // }
   h1 {
     position: absolute;
     top: 40px;
@@ -201,30 +186,26 @@ header {
     @include ir;
     @include size(130px,62px);
   }
-  // nav {
-  //   bottom: 0;
-  //   width: 100%;
-  //   ul {
-  //       display: flex;
-  //       flex-wrap: wrap;
-  //       justify-content: space-around;
-  //       width: 90%;
-  //       // max-width: 600px;
-  //       margin: 0 auto;
-  //       padding: 0;
-  //       list-style: none;
-  //     }
-  //     a {
-  //       display: flex;
-  //       align-items: flex-start;
-  //       padding: 15px 20px;
-  //       font-size: 1rem;
-  //       color: #fff;
-  //       &:hover {
-  //         color: darken(#fff, 5%);
-  //       }
-  //     }
-  // }
+}
+
+.container section {
+  width: 140%;
+  margin-left: -20%;
+  -webkit-transform: rotate(8deg);
+  -moz-transform:    rotate(8deg);
+  -ms-transform:     rotate(8deg);
+  -o-transform:      rotate(8deg);
+  transform:         rotate(8deg);
+  & > article {
+    width: 71.4285714%;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-transform: rotate(-8deg);
+    -moz-transform:    rotate(-8deg);
+    -ms-transform:     rotate(-8deg);
+    -o-transform:      rotate(-8deg);
+    transform:         rotate(-8deg);
+  }
 }
 
 section {
@@ -322,14 +303,6 @@ section {
         display: block;
       }
     }
-  }
-}
-.container {
-  position: relative;
-  z-index: 2;
-  margin-bottom: 100px;
-  &.final {
-    margin-bottom: 0;
   }
 }
 
@@ -506,6 +479,8 @@ section[id="join-us"] {
 
 
 section[id="history"] {
+  background: transparent url('../img/bg-section-history.jpg') no-repeat -18% 57%;
+  background-size: 55%;
   & > span {
     @extend %section-icon;
     background-image: url('../img/icon-history.png');
@@ -532,6 +507,8 @@ section[id="history"] {
 }
 
 section[id="proposal"] {
+  background: transparent url('../img/bg-section-proposal.jpg') no-repeat 109% 38%;
+  background-size: 55%;
   h2 {
     margin-bottom: 40px;
     font-style: italic;
@@ -551,6 +528,8 @@ section[id="proposal"] {
 
 
 section[id="accomodations"] {
+  background: transparent url('../img/bg-section-accomodations.jpg') no-repeat  -29% 70%;
+  background-size: 50%;
   .alt-hotel {
     color: $pink;
     &:hover {
@@ -640,6 +619,8 @@ section[id="accomodations"] {
 
 
 section[id="venue"] {
+  background: transparent url('../img/bg-section-venue.jpg') no-repeat 102% 47%;
+  background-size: 55%;
   .right {
     span {
       @extend %section-icon;
@@ -696,6 +677,53 @@ section[id="registry"] {
 section[id="sign-up"] {
   padding-top: 20px;
   padding-bottom: 10px;
+}
+
+section[id="directions"] {
+  padding-top: 40px;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  header {
+    overflow: hidden;
+    @media (min-width: 768px) {
+      padding: 0 40px 30px;
+      border-bottom: 1px solid lighten($grey, 35%);
+    }
+  }
+  h2, form {
+    @media (min-width: 768px) {
+      float: left;
+    }
+  }
+  h2 {
+    width: 30%;
+  }
+  form {
+    width: 70%;
+    #map-address {
+      padding: 9px 10px;
+      font-size: 1.2em;
+      font-family: $proxima;
+      @include box;
+    }
+    #map-subscribe {
+      @include box;
+    }
+    @media (min-width: 768px) {
+      #map-address {
+        float: left;
+        width: 70%;
+        margin-top: 8px;
+      }
+      #map-subscribe {
+        float: left;
+        width: 20%;
+        margin: 8px 0 0 5%;
+      }
+
+}
+  }
 }
 
 footer {
