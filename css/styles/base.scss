@@ -174,17 +174,17 @@ header[id="main-header"] {
   @media (min-width: 768px) {
     height: 500px;
   }
-  i {
-    display: block;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background: rgba(0,0,0,0.6);
-    @include animate-custom;
-    @include fadeOut;
-  }
+  // i {
+  //   display: block;
+  //   position: absolute;
+  //   top: 0;
+  //   bottom: 0;
+  //   left: 0;
+  //   width: 100%;
+  //   background: rgba(0,0,0,0.6);
+  //   @include animate-custom;
+  //   @include fadeOut;
+  // }
   h1 {
     position: absolute;
     top: 40px;
