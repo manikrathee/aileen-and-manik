@@ -1,23 +1,29 @@
 /* Base Styles */
-// @font-face {
-//   font-family: 'calendas-plus';
-//   src: url("/fonts/calendas_plus.otf") format("opentype");
-//   // font-weight: normal;
-//   // font-style: normal;
-// }
-
-
 
 @font-face {
-    font-family: 'calendas-plus';
+    font-family: 'calendas_plusregular';
     src: url('../fonts/calendas_plus-webfont.eot');
     src: url('../fonts/calendas_plus-webfont.eot?#iefix') format('embedded-opentype'),
          url('../fonts/calendas_plus-webfont.woff') format('woff'),
          url('../fonts/calendas_plus-webfont.ttf') format('truetype'),
-         url('../fonts/calendas_plus-webfont.svg#calendas-plus') format('svg');
+         url('../fonts/calendas_plus-webfont.svg#calendas_plusregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'calendas_plusitalic';
+    src: url('../fonts/calendas_plus_italic-webfont.eot');
+    src: url('../fonts/calendas_plus_italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/calendas_plus_italic-webfont.woff') format('woff'),
+         url('../fonts/calendas_plus_italic-webfont.ttf') format('truetype'),
+         url('../fonts/calendas_plus_italic-webfont.svg#calendas_plusitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
 
 /* Variables */
 // Color
@@ -37,10 +43,10 @@ $monospace: "Bitstream Vera Sans Mono", Consolas, Courier, monospace;
 // TypeKit
 $proxima:  "proxima-nova", helvetica, tahoma, verdana, sans-serif;
 $calendas: 'calendas-plus', Georgia, Cambria, "Times New Roman", Times, serif;
+$calendas_italic: 'calendas_plusitalic', Georgia, Cambria, "Times New Roman", Times, serif;
 
 // Elements
 $divider: 1px solid rgba(229,229,229,1); /* #E5E5E5 */
-
 
 // Symbolset
 .ss-icon {
@@ -69,10 +75,10 @@ html, :root {}
 body {
   background: $off-white;
   -webkit-backface-visibility: hidden;
-  -webkit-text-size-adjust: none;
-  -moz-text-size-adjust: none;
-  -ms-text-size-adjust: none;
-  text-size-adjust: none;
+  // -webkit-text-size-adjust: none;
+  // -moz-text-size-adjust: none;
+  // -ms-text-size-adjust: none;
+  // text-size-adjust: none;
   -moz-font-feature-settings: 'liga' 1, 'onum' 1, 'dlig' 1;
   -moz-font-feature-settings: 'liga' 1, 'onum' 1, 'dlig' 1;
   -ms-font-feature-settings: 'liga' 1, 'onum' 1, 'dlig' 1;
@@ -233,9 +239,9 @@ section {
   h2 {
     display: block;
     margin-bottom: 5px;
+    font-family: $calendas_italic;
     font-size: 2.25rem;
     font-weight: 100;
-    font-style: italic;
     text-align: center;
     line-height: 1.5;
     @media (min-width: 768px) {
@@ -247,9 +253,9 @@ section {
     display: block;
     width: 100%;
     margin-bottom: 15px;
+    font-family: $calendas_italic;
     text-align: center;
     font-size: 1.5rem;
-    font-style: italic;
     line-height: 1.5;
   }
   div {
@@ -305,9 +311,10 @@ section {
     max-width: 700px;
     opacity: 0.75;
     margin: 30px auto;
+    font-family: $calendas_italic;
+    font-style: normal;
     font-size: 1.2rem;
     line-height: 1.5;
-    font-style: italic;
     text-align: center;
     br {
       display: none;
@@ -324,6 +331,7 @@ section[id="join-us"] {
   text-align: center;
   h2 {
     padding: 0;
+    font-family: $calendas;
     font-size: 2.2rem;
     font-weight: normal;
     font-style: normal;
@@ -333,8 +341,8 @@ section[id="join-us"] {
     position: relative;
     margin: 70px 0 80px 0;
     h3 {
+      font-family: $calendas_italic;
       font-size: 1.25rem;
-      font-style: italic;
       font-weight: 100;
     }
     date {
@@ -512,9 +520,10 @@ section[id="history"] {
   }
   h2 {
     margin-bottom: 40px;
-    font-style: normal;
+    font-family: $calendas;
     i {
-      font-style: italic;
+      font-family: $calendas_italic;
+      font-style: normal;
     }
     @media (min-width: 768px) {
       text-align: center;
@@ -529,7 +538,7 @@ section[id="proposal"] {
   }
   h2 {
     margin-bottom: 40px;
-    font-style: italic;
+    font-family: $calendas_italic;
     text-align: center;
   }
   span {
@@ -624,7 +633,7 @@ section[id="accomodations"] {
       margin-top: 40px;
       margin-bottom: 30px;
       font-size: 1.2rem;
-      font-style: italic;
+      font-family: $calendas_italic;
     }
     .details {
       opacity: 0.7;
@@ -666,7 +675,7 @@ section[id="venue"] {
     }
     p {
       opacity: 0.65;
-      font-style: italic;
+      font-family: $calendas_italic;
       strong {
         display: block;
         font-family: $proxima;
@@ -688,6 +697,9 @@ section[id="registry"] {
     background: transparent url('../img/bg-section-registry.jpg') no-repeat 15% 66%;
     background-size: 55%;
     margin-top: 5px; // fixes bg overlap w/ previous section
+  }
+  h2 {
+    margin-top: 20px;
   }
   h6 {
     @media (min-width: 768px) {
@@ -917,8 +929,7 @@ footer {
     }
     label {
       margin-left: 8px;
-      font-style: italic;
-      font-family: $calendas;
+      font-family: $calendas_italic;
       font-size: 0.9rem;
       text-transform: none;
       opacity: 0.75;
