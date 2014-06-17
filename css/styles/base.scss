@@ -1002,25 +1002,25 @@ footer {
   }
 }
 
-html.js {
-  @media (min-width: 768px) {
-    section[id="join-us"],
-    section[id="history"],
-    section[id="proposal"],
-    section[id="accomodations"],
-    section[id="venue"],
-    section[id="registry"] {
-      article {
-        -webkit-transform-style: preserve-3d;
-        opacity: 0;
-      }
-      &.is-visible {
-        article {
-          @include animate;
-          @include fadeIn;
-        }
-      }
-    }
-  }
-}
+// html.js {
+//   @media (min-width: 768px) {
+//     section[id="join-us"],
+//     section[id="history"],
+//     section[id="proposal"],
+//     section[id="accomodations"],
+//     section[id="venue"],
+//     section[id="registry"] {
+//       article {
+//         -webkit-transform-style: preserve-3d;
+//         opacity: 0;
+//       }
+//       &.is-visible {
+//         article {
+//           @include animate;
+//           @include fadeIn;
+//         }
+//       }
+//     }
+//   }
+// }
 
