@@ -13,28 +13,28 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 */
 
 @mixin animate{
-  -webkit-animation: 1s ease;
-     -moz-animation: 1s ease;
-      -ms-animation: 1s ease;
-       -o-animation: 1s ease;
-          animation: 1s ease;
-  -webkit-animation-fill-mode: both;
-     -moz-animation-fill-mode: both;
-      -ms-animation-fill-mode: both;
-       -o-animation-fill-mode: both;
-          animation-fill-mode: both;
+  -webkit-animation: 1.75s ease;
+     -moz-animation: 1.75s ease;
+      -ms-animation: 1.75s ease;
+       -o-animation: 1.75s ease;
+          animation: 1.75s ease;
+  -webkit-animation-fill-mode: forwards;
+     -moz-animation-fill-mode: forwards;
+      -ms-animation-fill-mode: forwards;
+       -o-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 @mixin animate-slow{
-  -webkit-animation: 2s ease;
-     -moz-animation: 2s ease;
-      -ms-animation: 2s ease;
-       -o-animation: 2s ease;
-          animation: 2s ease;
-  -webkit-animation-fill-mode: both;
-     -moz-animation-fill-mode: both;
-      -ms-animation-fill-mode: both;
-       -o-animation-fill-mode: both;
-          animation-fill-mode: both;
+  -webkit-animation: 2.25s ease;
+     -moz-animation: 2.25s ease;
+      -ms-animation: 2.25s ease;
+       -o-animation: 2.25s ease;
+          animation: 2.25s ease;
+  -webkit-animation-fill-mode: forwards;
+     -moz-animation-fill-mode: forwards;
+      -ms-animation-fill-mode: forwards;
+       -o-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 @mixin animate-fast{
   -webkit-animation: 0.5s ease;
@@ -42,11 +42,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
       -ms-animation: 0.5s ease;
        -o-animation: 0.5s ease;
           animation: 0.5s ease;
-  -webkit-animation-fill-mode: both;
-     -moz-animation-fill-mode: both;
-      -ms-animation-fill-mode: both;
-       -o-animation-fill-mode: both;
-          animation-fill-mode: both;
+  -webkit-animation-fill-mode: forwards;
+     -moz-animation-fill-mode: forwards;
+      -ms-animation-fill-mode: forwards;
+       -o-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 @mixin animate-custom{

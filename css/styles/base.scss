@@ -340,12 +340,15 @@ section[id="join-us"] {
   .join-us-at {
     position: relative;
     margin: 70px 0 80px 0;
+    padding: 5px 0;
     h3 {
       font-family: $calendas_italic;
       font-size: 1.25rem;
       font-weight: 100;
     }
     date {
+      display: block;
+      margin-top: 10px;
       font-family: $proxima;
       font-size: 0.75rem;
       text-transform: uppercase;
@@ -359,18 +362,20 @@ section[id="join-us"] {
       color: $grey;
       @media (min-width: 768px) {
         display: block;
-        width: 108px;
+        width: 125px;
         position: absolute;
-        top: 0;
         right: 10px;
         margin: 0;
         font-size: 0.6rem;
-        text-align: left;
+        text-align: right;
         &:hover {
           opacity: 1;
         }
+        &.add-to-calendar {
+          top: 6px;
+        }
         &.get-directions {
-          top: 26px;
+          bottom: 6px;
         }
       }
       i {
@@ -379,6 +384,7 @@ section[id="join-us"] {
           display: block;
           width: 75%;
           float: left;
+          padding: 2px 15px 0 0;
         }
       }
       .ss-icon {
@@ -528,6 +534,13 @@ section[id="history"] {
     @media (min-width: 768px) {
       text-align: center;
     }
+  }
+  p {
+    padding-bottom: 20px;
+  }
+  a {
+    padding-bottom: 1px;
+    border-bottom: 1px solid lighten($grey,15%);
   }
 }
 
@@ -685,6 +698,9 @@ section[id="venue"] {
       &.ladies-header,
       &.gentlemen-header {
         margin-bottom: 0;
+        & + p {
+          margin-top: -4px;
+        }
       }
     }
   }
@@ -945,7 +961,7 @@ footer {
     &.is-shown {
       display: block;
       height: 50px;
-      @include animate-fast;
+      @include animate-slow;
       @include fadeIn;
     }
   }
@@ -985,3 +1001,26 @@ footer {
     text-align: center;
   }
 }
+
+html.js {
+  @media (min-width: 768px) {
+    section[id="join-us"],
+    section[id="history"],
+    section[id="proposal"],
+    section[id="accomodations"],
+    section[id="venue"],
+    section[id="registry"] {
+      article {
+        -webkit-transform-style: preserve-3d;
+        opacity: 0;
+      }
+      &.is-visible {
+        article {
+          @include animate;
+          @include fadeIn;
+        }
+      }
+    }
+  }
+}
+

@@ -46,4 +46,14 @@ $(document).ready(function() {
     $('#thank-you').addClass('is-shown');
     ga('send', 'event', 'Main', 'Return Visit', 'viewed Form Thank You replacement');
   }
+
+  // Waypoints
+  $('#join-us, #history, #proposal, #accomodations, #venue, #registry').waypoint(function() {
+    $(this).addClass('is-visible');
+  }, {
+    offset: function() {
+      return $(this).height();
+    }
+  });
+
 });
